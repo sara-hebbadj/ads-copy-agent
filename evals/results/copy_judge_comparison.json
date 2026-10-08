@@ -1,0 +1,189 @@
+{
+  "old": {
+    "file": "copy_openai_2026-10-08.csv",
+    "overall": {
+      "n": 270,
+      "judge_brand_fit_mean": 3.55,
+      "judge_language_quality_mean": 4.66
+    },
+    "by_language": {
+      "ar": {
+        "n": 90,
+        "judge_brand_fit_mean": 3.49,
+        "judge_language_quality_mean": 4.49
+      },
+      "en": {
+        "n": 90,
+        "judge_brand_fit_mean": 3.78,
+        "judge_language_quality_mean": 4.79
+      },
+      "fr": {
+        "n": 90,
+        "judge_brand_fit_mean": 3.39,
+        "judge_language_quality_mean": 4.7
+      }
+    },
+    "brief_has_offer": {
+      "False": {
+        "n": 162,
+        "judge_brand_fit_mean": 4.1,
+        "judge_language_quality_mean": 4.75
+      },
+      "True": {
+        "n": 108,
+        "judge_brand_fit_mean": 2.72,
+        "judge_language_quality_mean": 4.53
+      }
+    },
+    "brief_has_required_sentence": {
+      "False": {
+        "n": 189,
+        "judge_brand_fit_mean": 3.88,
+        "judge_language_quality_mean": 4.77
+      },
+      "True": {
+        "n": 81,
+        "judge_brand_fit_mean": 2.79,
+        "judge_language_quality_mean": 4.41
+      }
+    },
+    "by_placement_and_offer": {
+      "facebook_feed / no offer": {
+        "n": 45,
+        "judge_brand_fit_mean": 4.09,
+        "judge_language_quality_mean": 4.78
+      },
+      "facebook_feed / offer": {
+        "n": 27,
+        "judge_brand_fit_mean": 3.0,
+        "judge_language_quality_mean": 4.67
+      },
+      "instagram_feed / no offer": {
+        "n": 36,
+        "judge_brand_fit_mean": 4.17,
+        "judge_language_quality_mean": 4.89
+      },
+      "instagram_feed / offer": {
+        "n": 27,
+        "judge_brand_fit_mean": 3.22,
+        "judge_language_quality_mean": 4.78
+      },
+      "reels / no offer": {
+        "n": 36,
+        "judge_brand_fit_mean": 3.78,
+        "judge_language_quality_mean": 4.64
+      },
+      "reels / offer": {
+        "n": 27,
+        "judge_brand_fit_mean": 1.44,
+        "judge_language_quality_mean": 4.07
+      },
+      "stories / no offer": {
+        "n": 45,
+        "judge_brand_fit_mean": 4.33,
+        "judge_language_quality_mean": 4.69
+      },
+      "stories / offer": {
+        "n": 27,
+        "judge_brand_fit_mean": 3.22,
+        "judge_language_quality_mean": 4.59
+      }
+    }
+  },
+  "new": {
+    "file": "copy_openai_2026-10-08_judge_v2.csv",
+    "overall": {
+      "n": 270,
+      "judge_brand_fit_mean": 4.19,
+      "judge_language_quality_mean": 4.85
+    },
+    "by_language": {
+      "ar": {
+        "n": 90,
+        "judge_brand_fit_mean": 4.16,
+        "judge_language_quality_mean": 4.81
+      },
+      "en": {
+        "n": 90,
+        "judge_brand_fit_mean": 4.37,
+        "judge_language_quality_mean": 4.92
+      },
+      "fr": {
+        "n": 90,
+        "judge_brand_fit_mean": 4.06,
+        "judge_language_quality_mean": 4.81
+      }
+    },
+    "brief_has_offer": {
+      "False": {
+        "n": 162,
+        "judge_brand_fit_mean": 4.73,
+        "judge_language_quality_mean": 4.93
+      },
+      "True": {
+        "n": 108,
+        "judge_brand_fit_mean": 3.39,
+        "judge_language_quality_mean": 4.73
+      }
+    },
+    "brief_has_required_sentence": {
+      "False": {
+        "n": 189,
+        "judge_brand_fit_mean": 4.38,
+        "judge_language_quality_mean": 4.87
+      },
+      "True": {
+        "n": 81,
+        "judge_brand_fit_mean": 3.75,
+        "judge_language_quality_mean": 4.8
+      }
+    },
+    "by_placement_and_offer": {
+      "facebook_feed / no offer": {
+        "n": 45,
+        "judge_brand_fit_mean": 4.78,
+        "judge_language_quality_mean": 4.96
+      },
+      "facebook_feed / offer": {
+        "n": 27,
+        "judge_brand_fit_mean": 3.63,
+        "judge_language_quality_mean": 4.85
+      },
+      "instagram_feed / no offer": {
+        "n": 36,
+        "judge_brand_fit_mean": 4.81,
+        "judge_language_quality_mean": 5.0
+      },
+      "instagram_feed / offer": {
+        "n": 27,
+        "judge_brand_fit_mean": 4.04,
+        "judge_language_quality_mean": 4.89
+      },
+      "reels / no offer": {
+        "n": 36,
+        "judge_brand_fit_mean": 4.64,
+        "judge_language_quality_mean": 4.94
+      },
+      "reels / offer": {
+        "n": 27,
+        "judge_brand_fit_mean": 1.85,
+        "judge_language_quality_mean": 4.41
+      },
+      "stories / no offer": {
+        "n": 45,
+        "judge_brand_fit_mean": 4.69,
+        "judge_language_quality_mean": 4.82
+      },
+      "stories / offer": {
+        "n": 27,
+        "judge_brand_fit_mean": 4.04,
+        "judge_language_quality_mean": 4.78
+      }
+    }
+  },
+  "brand_fit_change": {
+    "up": 140,
+    "same": 130,
+    "down": 0
+  }
+}

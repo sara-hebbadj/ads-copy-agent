@@ -1,8 +1,10 @@
 """Evaluation runner. One command per task; results go to evals/results/.
 
     python -m evals.run --task policy                         # code rules only, no LLM (runs now)
-    python -m evals.run --task policy-llm --model cheap --limit 10
-    python -m evals.run --task copy --model main --limit 10    # drafts + rule check + judge
+    python -m evals.run --task policy-llm --model cheap --split dev   # smoke run, dev set
+    python -m evals.run --task policy-llm --model cheap              # held-out set, once
+    python -m evals.run --task copy --model cheap --limit 10   # drafts + rule check + judge
+    python -m evals.run --task copy-rejudge --source evals/results/copy_<family>_<date>.csv
     python -m evals.run --task analyst --model cheap
     python -m evals.run --model cheap --limit 10               # everything (--task all)
     python -m evals.run --dry-run                              # fake model, writes evals/dry_run/
@@ -27,7 +29,7 @@ from ads_agent import EVALS_DIR, REPO_ROOT
 from ads_agent.analyst import analyse, build_facts, summarize, verify_numbers
 from ads_agent.briefs import list_briefs
 from ads_agent.campaign import load_campaign
-from ads_agent.checker import check_ad, llm_review
+from ads_agent.checker import check_ad, llm_review, load_brand
 from ads_agent.copywriter import LANGUAGE_NAMES, draft_variants
 from ads_agent.llm import FakeLLM, LLMClient, MissingSettingError, parse_json_answer
 
@@ -128,9 +130,13 @@ def run_policy_rules(out_dir: Path) -> dict:
 # --- Task 2: LLM review layer on the same cases ---------------------------------------------
 
 
-def run_policy_llm(out_dir: Path, role: str, limit: int | None, dry_run: bool, trace: Path):
+def run_policy_llm(
+    out_dir: Path, role: str, limit: int | None, dry_run: bool, trace: Path, split: str = "test"
+):
+    """Rules alone vs rules OR LLM. Use split="dev" for smoke runs, so the held-out
+    test set is only sent to the model once, after the prompt is settled."""
     llm = make_client(role, dry_run, trace)
-    cases = load_cases("test")[:limit]
+    cases = load_cases(split)[:limit]
     rows = []
     for case in cases:
         rules_result = check_ad(case, case["placement"])
@@ -144,15 +150,21 @@ def run_policy_llm(out_dir: Path, role: str, limit: int | None, dry_run: bool, t
                 "rules": "compliant" if rules_result.passed else "violating",
                 "llm": "violating" if llm_fail else "compliant",
                 "combined": "violating" if llm_fail or not rules_result.passed else "compliant",
+                # An unreadable answer is a warning, so it counts as "compliant" above.
+                "llm_unreadable": any(i.severity == "warn" for i in llm_issues),
                 "llm_reasons": "; ".join(i.message for i in llm_issues),
             }
         )
-    tag = f"{model_family(llm.model)}_{TODAY}" if not dry_run else "dry_run"
+    prefix = "" if split == "test" else f"{split}_"
+    tag = prefix + ("dry_run" if dry_run else f"{model_family(llm.model)}_{TODAY}")
     write_csv(out_dir / f"policy_llm_{tag}.csv", rows)
     summary = {
-        "task": "policy_llm", "date": TODAY, "model": llm.model, "split": "test",
+        "task": "policy_llm", "date": TODAY, "model": llm.model, "split": split,
+        "rules_sha256": rules_fingerprint(),
         "rules_only": score(rows, "rules"), "llm_only": score(rows, "llm"),
-        "rules_or_llm": score(rows, "combined"), "cost_usd": round(llm.total_cost_usd, 4),
+        "rules_or_llm": score(rows, "combined"),
+        "llm_unreadable": sum(r["llm_unreadable"] for r in rows),
+        "cost_usd": round(llm.total_cost_usd, 4),
     }
     write_json(out_dir / f"policy_llm_{tag}_summary.json", summary)
     return summary
@@ -160,9 +172,16 @@ def run_policy_llm(out_dir: Path, role: str, limit: int | None, dry_run: bool, t
 
 # --- Task 3: copy quality (drafts -> rule check -> judge) -----------------------------------
 
+# v1 (first live run, 8 October 2026) showed the judge only product, audience, key message
+# and tone. It then marked down the offer and the required sentences that the brief makes
+# compulsory, and it never saw the brand voice. v2 shows the judge all three.
+JUDGE_VERSION = "v2"
 JUDGE_SYSTEM = """You review ad copy for a skincare brand.
+Brand voice: {voice}
 Score two things from 1 (poor) to 5 (excellent):
 - brand_fit: matches the brief (product, audience, key message, tone) and the brand voice.
+  The brief's offer with its terms line, and its required sentence, must appear in the ad:
+  don't lower the score for including them, but do lower it if they crowd out the key message.
 - language_quality: natural, correct {language} that a native speaker in the UAE would find
   fluent and culturally appropriate (Arabic: correct grammar and gender forms;
   French: correct accents and typography).
@@ -170,10 +189,16 @@ Reply with JSON only: {{"brand_fit": 1-5, "language_quality": 1-5, "reason": "on
 
 
 def judge_variant(judge, brief: dict, variant: dict) -> dict:
-    system = JUDGE_SYSTEM.format(language=LANGUAGE_NAMES[variant["language"]])
+    language = variant["language"]
+    system = JUDGE_SYSTEM.format(language=LANGUAGE_NAMES[language], voice=load_brand()["voice"])
+    brief_view = {k: brief[k] for k in ("product", "audience", "key_message", "tone")}
+    brief_view["offer"] = brief.get("offer") or "none"
+    brief_view["required_sentence"] = (
+        brief.get("required_disclaimers", {}).get(language) or "none"
+    )
     user = json.dumps(
         {
-            "brief": {k: brief[k] for k in ("product", "audience", "key_message", "tone")},
+            "brief": brief_view,
             "ad": {k: variant[k] for k in ("language", "primary_text", "headline", "cta")},
         },
         ensure_ascii=False,
@@ -182,6 +207,38 @@ def judge_variant(judge, brief: dict, variant: dict) -> dict:
         return parse_json_answer(judge.complete(system, user, task="judge", temperature=0))
     except (ValueError, json.JSONDecodeError):
         return {"brand_fit": None, "language_quality": None, "reason": "unreadable judge answer"}
+
+
+def copy_scores(rows: list[dict]) -> dict:
+    """Rule pass rate and mean judge scores, overall and per language."""
+    if not rows:
+        return {}
+    frame = pd.DataFrame(rows)
+    frame["passed"] = frame["rule_check"] == "pass"
+
+    def stats(group: pd.DataFrame) -> dict:
+        brand_fit = pd.to_numeric(group["judge_brand_fit"])
+        language_quality = pd.to_numeric(group["judge_language_quality"])
+        return {
+            "variants": int(len(group)),
+            "rule_pass_rate": round(group["passed"].mean(), 3),
+            "judge_scored": int(brand_fit.notna().sum()),
+            "judge_brand_fit_mean": round(brand_fit.mean(), 2),
+            "judge_language_quality_mean": round(language_quality.mean(), 2),
+        }
+
+    result = stats(frame)
+    result["by_language"] = {lang: stats(group) for lang, group in frame.groupby("language")}
+    return result
+
+
+def judged_row(row: dict, scores: dict) -> dict:
+    return {
+        **row,
+        "judge_brand_fit": scores.get("brand_fit"),
+        "judge_language_quality": scores.get("language_quality"),
+        "judge_reason": scores.get("reason", ""),
+    }
 
 
 def run_copy(out_dir: Path, role: str, limit: int | None, dry_run: bool, trace: Path):
@@ -200,43 +257,47 @@ def run_copy(out_dir: Path, role: str, limit: int | None, dry_run: bool, trace: 
             continue
         for v in variants:
             check = check_ad(v, brief=brief)
-            scores = judge_variant(judge, brief, v)
-            rows.append(
-                {
-                    "brief_id": brief["id"], "variant_id": v["id"], "language": v["language"],
-                    "primary_text": v["primary_text"], "headline": v["headline"], "cta": v["cta"],
-                    "rule_check": "pass" if check.passed else "fail",
-                    "failed_rules": ";".join(check.failed_rules),
-                    "judge_brand_fit": scores.get("brand_fit"),
-                    "judge_language_quality": scores.get("language_quality"),
-                    "judge_reason": scores.get("reason", ""),
-                    "sara_brand_fit": "", "sara_language_quality": "", "sara_notes": "",
-                }
-            )
+            row = {
+                "brief_id": brief["id"], "variant_id": v["id"], "language": v["language"],
+                "primary_text": v["primary_text"], "headline": v["headline"], "cta": v["cta"],
+                "rule_check": "pass" if check.passed else "fail",
+                "failed_rules": ";".join(check.failed_rules),
+            }
+            rows.append(judged_row(row, judge_variant(judge, brief, v)))
+            rows[-1].update(sara_brand_fit="", sara_language_quality="", sara_notes="")
     tag = f"{model_family(writer.model)}_{TODAY}" if not dry_run else "dry_run"
     if rows:
         write_csv(out_dir / f"copy_{tag}.csv", rows)  # also Sara's manual rating sheet
-    frame = pd.DataFrame(rows)
     summary = {
         "task": "copy", "date": TODAY, "writer_model": writer.model, "judge_model": judge.model,
-        "briefs": len(briefs), "briefs_failed_to_parse": failures, "variants": len(rows),
+        "judge_version": JUDGE_VERSION,
+        "briefs": len(briefs), "briefs_failed_to_parse": failures,
         "cost_usd": round(writer.total_cost_usd + judge.total_cost_usd, 4),
+        **copy_scores(rows),
     }
-    if rows:
-        frame["passed"] = frame["rule_check"] == "pass"
-        summary["rule_pass_rate"] = round(frame["passed"].mean(), 3)
-        summary["by_language"] = {
-            lang: {
-                "variants": int(len(group)),
-                "rule_pass_rate": round(group["passed"].mean(), 3),
-                "judge_brand_fit_mean": round(pd.to_numeric(group["judge_brand_fit"]).mean(), 2),
-                "judge_language_quality_mean": round(
-                    pd.to_numeric(group["judge_language_quality"]).mean(), 2
-                ),
-            }
-            for lang, group in frame.groupby("language")
-        }
     write_json(out_dir / f"copy_{tag}_summary.json", summary)
+    return summary
+
+
+def run_rejudge(out_dir: Path, source: Path, dry_run: bool, trace: Path):
+    """Score saved drafts again with the current judge prompt. No new drafts are written,
+    so two judge versions can be compared on exactly the same ads."""
+    judge = make_client("judge", dry_run, trace)
+    briefs = {brief["id"]: brief for brief in list_briefs()}
+    with source.open(encoding="utf-8") as f:
+        saved = list(csv.DictReader(f))
+    rows = []
+    for row in saved:
+        variant = {**row, "id": row["variant_id"]}
+        rows.append(judged_row(row, judge_variant(judge, briefs[row["brief_id"]], variant)))
+    name = f"{source.stem}_judge_{JUDGE_VERSION}" if not dry_run else "copy_rejudge_dry_run"
+    write_csv(out_dir / f"{name}.csv", rows)
+    summary = {
+        "task": "copy_rejudge", "date": TODAY, "source": source.name,
+        "judge_model": judge.model, "judge_version": JUDGE_VERSION,
+        "cost_usd": round(judge.total_cost_usd, 4), **copy_scores(rows),
+    }
+    write_json(out_dir / f"{name}_summary.json", summary)
     return summary
 
 
@@ -290,12 +351,19 @@ def main() -> None:
         description=__doc__, formatter_class=argparse.RawTextHelpFormatter
     )
     parser.add_argument("--task", default="all",
-                        choices=["all", "policy", "policy-llm", "copy", "analyst"])
+                        choices=["all", "policy", "policy-llm", "copy", "copy-rejudge",
+                                 "analyst"])
     parser.add_argument("--model", default="cheap", choices=["main", "cheap"],
                         help="model role under test (the judge is always MODEL_JUDGE)")
     parser.add_argument("--limit", type=int, default=None, help="only the first N items")
+    parser.add_argument("--split", default="test", choices=["dev", "test"],
+                        help="policy-llm only: dev for smoke runs, test for the held-out run")
+    parser.add_argument("--source", type=Path,
+                        help="copy-rejudge only: a saved copy_*.csv whose drafts are scored again")
     parser.add_argument("--dry-run", action="store_true", help="fake model; NOT real results")
     args = parser.parse_args()
+    if args.task == "copy-rejudge" and args.source is None:
+        parser.error("--task copy-rejudge needs --source evals/results/copy_<...>.csv")
 
     out_dir = EVALS_DIR / ("dry_run" if args.dry_run else "results")
     trace = out_dir / "traces.jsonl" if args.dry_run else EVALS_DIR / "traces.jsonl"
@@ -311,11 +379,15 @@ def main() -> None:
 
     tasks = {
         "policy": lambda: run_policy_rules(out_dir),
-        "policy-llm": lambda: run_policy_llm(out_dir, args.model, args.limit, args.dry_run, trace),
+        "policy-llm": lambda: run_policy_llm(
+            out_dir, args.model, args.limit, args.dry_run, trace, args.split
+        ),
         "copy": lambda: run_copy(out_dir, args.model, args.limit, args.dry_run, trace),
+        "copy-rejudge": lambda: run_rejudge(out_dir, args.source, args.dry_run, trace),
         "analyst": lambda: run_analyst(out_dir, args.model, args.limit, args.dry_run, trace),
     }
-    chosen = list(tasks) if args.task == "all" else [args.task]
+    all_tasks = ["policy", "policy-llm", "copy", "analyst"]
+    chosen = all_tasks if args.task == "all" else [args.task]
     for name in chosen:
         try:
             summary = tasks[name]()

@@ -1,0 +1,31 @@
+{
+  "task": "copy",
+  "date": "2026-10-08",
+  "writer_model": "openai/gpt-6-luna",
+  "judge_model": "google/gemini-3.8-flash",
+  "briefs": 1,
+  "briefs_failed_to_parse": [],
+  "variants": 9,
+  "cost_usd": 0.0176,
+  "rule_pass_rate": 1.0,
+  "by_language": {
+    "ar": {
+      "variants": 3,
+      "rule_pass_rate": 1.0,
+      "judge_brand_fit_mean": 3.67,
+      "judge_language_quality_mean": 5.0
+    },
+    "en": {
+      "variants": 3,
+      "rule_pass_rate": 1.0,
+      "judge_brand_fit_mean": 3.67,
+      "judge_language_quality_mean": 5.0
+    },
+    "fr": {
+      "variants": 3,
+      "rule_pass_rate": 1.0,
+      "judge_brand_fit_mean": 2.67,
+      "judge_language_quality_mean": 4.67
+    }
+  }
+}

@@ -1,0 +1,49 @@
+id,language,label,rules,llm,combined,llm_unreadable,llm_reasons
+test-en-01,en,violating,violating,violating,violating,False,"Promises permanent results with “forever.”; Claims to remove dark spots, a skin concern."
+test-en-02,en,violating,violating,violating,violating,False,"Implies the reader has a skin condition with “Breaking out.”; Claims the mask clears pimples, a medical claim.; Promises overnight results with “overnight” and “by morning.”"
+test-en-03,en,violating,compliant,violating,violating,False,Implies the reader feels self-conscious about their appearance (personal attributes).
+test-en-04,en,violating,compliant,violating,violating,False,Promises an age-reversing result: “Look 10 years younger” and “Turn back time.”
+test-en-05,en,violating,compliant,violating,violating,False,Uses a sensational secret hook and implies deceptive authority with “Dermatologists don't want you to know.”
+test-en-06,en,violating,violating,violating,violating,False,The 40% discount needs a terms line such as “T&Cs apply.”
+test-en-07,en,violating,violating,compliant,violating,False,
+test-en-08,en,violating,violating,violating,violating,False,Uses the brand-banned term “anti-aging”.
+test-en-09,en,compliant,compliant,compliant,compliant,False,
+test-en-10,en,compliant,compliant,violating,violating,False,"“Satisfaction guaranteed” promises a guaranteed outcome and overstates the limited return policy, which only covers unopened products."
+test-en-11,en,compliant,compliant,compliant,compliant,False,
+test-en-12,en,compliant,compliant,compliant,compliant,False,
+test-en-13,en,compliant,compliant,compliant,compliant,False,
+test-en-14,en,compliant,violating,violating,violating,False,"Claims the product prevents breakouts, a health-related benefit."
+test-en-15,en,compliant,compliant,compliant,compliant,False,
+test-en-16,en,compliant,compliant,compliant,compliant,False,
+test-ar-01,ar,violating,violating,violating,violating,False,"Claims the serum removes melasma and pigmentation, a medical claim.; Promises the result lasts forever."
+test-ar-02,ar,violating,violating,violating,violating,False,يسأل القارئة إن كانت تعاني من الجفاف والحبوب، منسوبًا إليها حالة جلدية.; يوحي بأن المنتج حلّ للحبوب، وقد يُفهم كادعاء علاجي.
+test-ar-03,ar,violating,violating,violating,violating,False,Claims to treat eczema.; Promises immediate relief.
+test-ar-04,ar,violating,compliant,violating,violating,False,Uses a sensational secret hook and implies deceptive behavior by dermatologists.
+test-ar-05,ar,violating,compliant,violating,violating,False,Promises a specific age-reversing result within two weeks and permanent youth.
+test-ar-06,ar,violating,violating,violating,violating,False,الخصم لا يتضمن سطر الشروط والأحكام المطلوب.
+test-ar-07,ar,violating,violating,compliant,violating,False,
+test-ar-08,ar,violating,violating,violating,violating,False,Uses banned skin-whitening language (تبييض).
+test-ar-09,ar,compliant,compliant,compliant,compliant,False,
+test-ar-10,ar,compliant,compliant,compliant,compliant,False,
+test-ar-11,ar,compliant,compliant,compliant,compliant,False,
+test-ar-12,ar,compliant,compliant,compliant,compliant,False,
+test-ar-13,ar,compliant,compliant,compliant,compliant,False,
+test-ar-14,ar,compliant,compliant,compliant,compliant,False,
+test-ar-15,ar,compliant,compliant,compliant,compliant,False,
+test-ar-16,ar,compliant,compliant,violating,violating,False,"Promises softness and radiance within ten minutes, implying a rapid result."
+test-fr-01,fr,violating,violating,violating,violating,False,"« Fini les rides » promete eliminar las arrugas, un resultado absoluto."
+test-fr-02,fr,violating,violating,violating,violating,False,"Claims the balm treats eczema and heals, which are prohibited medical claims."
+test-fr-03,fr,violating,compliant,violating,violating,False,Promet un rajeunissement marqué en deux semaines.; Le « secret » de jeunesse est un accroche sensationnaliste.
+test-fr-04,fr,violating,compliant,violating,violating,False,Sensational secret hook and invented dermatologist authority.; “Teint parfait” makes a perfection claim that conflicts with brand rules.
+test-fr-05,fr,violating,violating,violating,violating,False,La réduction de 40 % n’est accompagnée d’aucune mention de conditions (« Voir conditions. »).
+test-fr-06,fr,violating,compliant,violating,violating,False,"Uses skin-whitening language, which is banned by the brand rules."
+test-fr-07,fr,violating,violating,violating,violating,False,« Toute la journée » promet un résultat durable sans réserve.
+test-fr-08,fr,violating,violating,violating,violating,False,"Asks the reader whether they have a skin concern.; Claims to erase the concern, a medical claim.; Promises results in one night."
+test-fr-09,fr,compliant,compliant,compliant,compliant,False,
+test-fr-10,fr,compliant,compliant,compliant,compliant,False,
+test-fr-11,fr,compliant,compliant,compliant,compliant,False,
+test-fr-12,fr,compliant,compliant,compliant,compliant,False,
+test-fr-13,fr,compliant,compliant,compliant,compliant,False,
+test-fr-14,fr,compliant,compliant,compliant,compliant,False,
+test-fr-15,fr,compliant,compliant,compliant,compliant,False,
+test-fr-16,fr,compliant,compliant,compliant,compliant,False,

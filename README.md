@@ -95,11 +95,15 @@ Component details are in [docs/architecture.md](docs/architecture.md).
 | 2026-10-08, v0.1, no LLM | **Policy checker, code rules only, held-out test set**: 48 ad texts (16 EN, 16 AR, 16 FR; 24 violating, 24 compliant) | **Precision 0.94 (16/17), recall 0.67 (16/24)**, accuracy 0.81 (39/48) | `evals/results/policy_rules_summary.json`, `policy_rules_test.csv` | Command: `python -m evals.run --task policy`. Deterministic, no model involved. Rule-file hashes are stored in the summary |
 | same | Held-out, by language | EN: P 0.83 (5/6), R 0.63 (5/8) · AR: P 1.00 (6/6), R 0.75 (6/8) · FR: P 1.00 (5/5), R 0.63 (5/8) | same | 16 cases per language, so each case moves recall by 12.5 points |
 | same | Development set: 24 texts written together with the rules | 24/24 correct | `policy_rules_dev.csv` | Not evidence of quality: the rules were tuned on this set |
-| pending | Checker with the LLM review layer (rules OR LLM), same 48 held-out cases | pending live run (needs OpenRouter key) | — | `python -m evals.run --task policy-llm --model cheap` |
-| pending | Copy quality: 30 briefs × 9 variants. Rule pass rate, LLM-judge brand fit and language quality (1–5), and Sara's own 1–5 ratings | pending live run (needs OpenRouter key) | — | `python -m evals.run --task copy --model main`. The output CSV is also Sara's rating sheet |
-| pending | Analyst: numbers in the LLM summary that match the computed facts, over 5 scenarios | pending live run (needs OpenRouter key) | — | Target 100%. `python -m evals.run --task analyst --model cheap` |
+| 2026-10-08, v0.1, live | **Checker with the LLM review layer (rules OR LLM)**, same 48 held-out cases. Reviewer: `openai/gpt-6-luna` (MODEL_CHEAP), temperature 0 | **Precision 0.89 (24/27), recall 1.00 (24/24)**, accuracy 0.94 (45/48). LLM alone: P 0.88 (22/25), R 0.92 (22/24). Code rules alone, same run: P 0.94 (16/17), R 0.67 (16/24) | `evals/results/policy_llm_openai_2026-10-08.csv`, `policy_llm_openai_2026-10-08_summary.json` | Command: `python -m evals.run --task policy-llm --model cheap`. The held-out set went to the model once, after a smoke run on the development set. 0 unreadable answers. Cost US$0.004. Read the limits below: the checklist and the cases have the same author |
+| same | Held-out, by language (16 each): code only → code + LLM | EN: P 0.83 (5/6) → 0.80 (8/10), R 0.63 (5/8) → 1.00 (8/8) · AR: P 1.00 (6/6) → 0.89 (8/9), R 0.75 (6/8) → 1.00 (8/8) · FR: P 1.00 (5/5) → 1.00 (8/8), R 0.63 (5/8) → 1.00 (8/8) | same | The LLM layer adds 8 correct catches and 2 false alarms. Its own 2 misses are length violations, which it is told to leave to the code |
+| 2026-10-08, v0.1, live | **Copy quality**: 30 briefs × 3 languages × 3 variants = 270 drafts by `openai/gpt-6-luna` (MODEL_CHEAP) | **Rule check pass 262/270 (0.97)**: AR 90/90, EN 88/90, FR 84/90. All 8 failures are length: primary text of 126–131 characters against a 125 limit | `evals/results/copy_openai_2026-10-08.csv` (also Sara's rating sheet), `copy_openai_2026-10-08_summary.json` | Command: `python -m evals.run --task copy --model cheap`. 0 drafts failed to parse. Cost US$0.6056 (drafts and judge v1) |
+| same | **LLM-judge scores, not human scores** (1–5), same 270 drafts. Judge: `google/gemini-3.8-flash` (MODEL_JUDGE), a different model family | Judge v2: brand fit **4.19**, language quality **4.85** (AR 4.16 / 4.81 · EN 4.37 / 4.92 · FR 4.06 / 4.81). Judge v1: 3.55 / 4.66. Weakest group: reels briefs with an offer, brand fit 1.85 (27 drafts) | `copy_openai_2026-10-08_judge_v2.csv`, `copy_openai_2026-10-08_judge_v2_summary.json`, `copy_judge_comparison.json` | v1 wasn't shown the offer, the required sentence or the brand voice. v2 was written **after** seeing the v1 scores, so both are reported (see below). Command: `python -m evals.run --task copy-rejudge --source evals/results/copy_openai_2026-10-08.csv`. Cost US$0.5945. Sara's own 1–5 ratings: pending |
+| 2026-10-08, v0.1, live | **Analyst number check**: LLM summaries by `openai/gpt-6-luna` (MODEL_CHEAP) for 5 scenarios | **98/98 numbers (100%) appear in the computed FACTS**; 5/5 summaries have no mismatch. A manual read found all 98 attached to the right ad set and metric | `analyst_openai_2026-10-08.csv`, `analyst_openai_2026-10-08_summary.json`, `analyst_openai_2026-10-08_attribution_audit.csv` | Command: `python -m evals.run --task analyst --model cheap`. Cost US$0.0018. The manual read was done by the coding agent, not by a person |
 
 All labelled cases and the checklist were written by a coding agent. The Arabic and French labels still need review by a native speaker: Sara, who is trilingual.
+
+Total OpenRouter spend for the live runs on 8 October 2026, smoke runs and the re-scoring included: **US$1.25 over 692 calls**, all successful. Every call is in `evals/traces.jsonl` with its model, tokens, cost and latency. Smoke-run files are in `evals/results/smoke/` and are not results.
 
 **Example output of the analyst** (deterministic, on the synthetic `campaign.csv`; this is a demo output, not an evaluation):
 
@@ -124,6 +128,23 @@ All labelled cases and the checklist were written by a coding agent. The Arabic 
 
 The rules were **not** changed after this run, so the number stays honest. The fixes are listed under Next steps, and they need a fresh held-out set to measure.
 
+**First live LLM runs (8 October 2026, run by a coding agent), in the order things happened:**
+
+1. **The LLM reviewer failed every compliant ad (smoke run on the development set).** The checklist asks the reviewer to check the length per placement and the call-to-action button, but `llm_review` only sends the language, primary text and headline. So the model failed all 12 compliant development ads with "no call-to-action button" or "placement missing" (LLM precision 0.50, 12/24).
+   - Fix (by the coding agent): a note in `docs/policy_checklist.md` telling the reviewer that code checks items 7 and 8, so it judges the wording against items 1 to 6. The note went in the checklist rather than in `checker.py`, so the frozen rule-file hashes stay valid. A test now guards it.
+   - Development re-run: LLM precision 0.86 (12/14), recall 1.00 (12/12). Both development runs are in `evals/results/smoke/`.
+2. **Keeping the held-out set clean.** A `--split dev` option makes smoke runs use the development cases. The 48 held-out cases went to the model once, after the fix, and the reviewer prompt wasn't changed after that.
+3. **Held-out errors of rules OR LLM: 3 false alarms, 0 misses.**
+   - "Satisfaction guaranteed" (EN, compliant): the LLM read it as a guaranteed result, although the checklist says refund promises are fine.
+   - "won't clog your pores or cause breakouts" (EN, compliant): the rules' old false positive. The LLM flagged it too, as a health claim.
+   - «في عشر دقائق», "in ten minutes" (AR, compliant): the LLM read it as a rapid-result promise.
+4. **The copy judge wasn't shown the whole brief (judge v1).** It saw the product, audience, key message and tone, but not the offer, the required sentence or the brand voice. So it marked down lines the brief makes compulsory: a free "Honey Glow" sample offer was read as "promoting a different product". Under v1, mean brand fit was 2.72 on the 108 drafts whose brief has an offer, against 4.10 on the other 162.
+   - Fix: judge v2 also sees the offer, the required sentence and the brand voice. It's told not to mark down the mandated lines, but to mark down when they crowd out the key message.
+   - **The same 270 drafts** were re-scored with `--task copy-rejudge`. 140 brand-fit scores went up, 130 stayed the same and none went down (`copy_judge_comparison.json`). This change was made after seeing results, so both versions are reported. Language-quality scores also rose (4.66 → 4.85) although that part of the rubric didn't change, which shows how much a judge's scores depend on its prompt.
+5. **What judge v2 then found: the writer drops the message when space is short.** All 32 drafts scored 1 or 2 for brand fit come from briefs with an offer. On reels (72-character primary text) with an offer, mean brand fit is 1.85 (27 drafts). For the snail-mucin brief (reels), all 9 primary texts are only the offer and the terms line, such as "Use LUMI15 for 15% off until 31 October 2026. T&Cs apply." For the kids' sunscreen brief (reels), all 9 drafts put the terms line in the headline, no primary text names the sunscreen, and the 3 French headlines name the free sample ("Honey Glow Mask") instead. The rule check passes these, because it reads the headline and primary text together and has no rule for "says what the product is". Not fixed yet (see Next steps).
+6. **8 of 270 drafts were too long**: primary text of 126–131 characters against 125. The prompt states the limit, but the model doesn't count characters exactly. The checker caught all 8. Not fixed yet.
+7. **Analyst: nothing failed.** 98 of 98 numbers were in the FACTS. All 692 calls returned without an API error.
+
 **Decisions made while building, on the development set, before the held-out run:**
 
 - A bare percentage is no longer treated as an offer, because skincare copy often names ingredient strengths ("vitamin C 15%"). Only discount wording counts.
@@ -145,7 +166,17 @@ uv run python -m evals.run --task policy                    # checker evaluation
 uv run python app/app.py                                    # demo at http://127.0.0.1:7860
 ```
 
-**Live LLM runs** need these settings in `Portfolio Projects/.env` (or `repo/.env`): `OPENROUTER_API_KEY`, `MODEL_MAIN`, `MODEL_CHEAP` and `MODEL_JUDGE`. The judge must come from a different model family. Then run `uv run python -m evals.run --model cheap --limit 10`.
+**Live LLM runs** need these settings in `Portfolio Projects/.env` (or `repo/.env`): `OPENROUTER_API_KEY`, `MODEL_MAIN`, `MODEL_CHEAP` and `MODEL_JUDGE`. The judge must come from a different model family. Then:
+
+```bash
+uv run python -m evals.run --task policy-llm --model cheap --split dev   # smoke run, development set
+uv run python -m evals.run --task policy-llm --model cheap               # held-out set: run once
+uv run python -m evals.run --task copy --model cheap --limit 1           # smoke run, 1 brief
+uv run python -m evals.run --task copy --model cheap                     # 30 briefs, about 1 hour
+uv run python -m evals.run --task analyst --model cheap                  # 5 scenarios
+```
+
+A run stops if one model client spends more than `MAX_COST_PER_RUN_USD`. The 8 October runs cost US$1.25 in total.
 
 Without a key, `--dry-run` runs the whole pipeline with a fake model and writes to `evals/dry_run/`. These are not results.
 
@@ -168,6 +199,7 @@ Code and data are under the MIT licence, © 2026 Sara Hebbadj.
 - **First version.** A coding agent (Claude) generated the first version of the code, the synthetic data, the labelled test cases and these docs, following those specs.
   - The development and held-out cases were kept separate, and the rules were frozen before the held-out run.
   - The agent ran the deterministic evaluation and the tests. No LLM was called, because model access wasn't available at build time.
+- **First live evaluation.** Later on 8 October, a coding agent ran the live evaluations through OpenRouter (models, cost and results are in the Results table). It fixed the two problems they exposed (the reviewer's scope and the judge's missing brief fields) and logged them above.
 - **My review.** I'll review, run and change the code.
 
 > TODO (Sara): describe your review: which files you read line by line, what you ran, which Arabic and French labels you corrected, and what you changed and why.
@@ -183,11 +215,16 @@ Code and data are under the MIT licence, © 2026 Sara Hebbadj.
 - The labels and the rules were written by the same agent, and native-speaker review is pending.
 - Arabic matching works inside words, so it can over-match (for example, «رخيص» also matches inside «ترخيص»). Lengths count diacritics.
 - Budget thresholds (margin, target ROAS, 30-purchase minimum, 20% steps) are assumptions. ROAS here is last-click revenue from a synthetic file, with no attribution windows or incrementality.
-- The number check confirms that a number exists in the facts. It can't confirm the number is attached to the right metric.
+- The number check confirms that a number exists in the facts. It can't confirm the number is attached to the right metric. A manual read of the 98 numbers in the 8 October run found none attached to the wrong metric, but that's one run, read by the coding agent.
+- The checklist (the LLM reviewer's prompt) and the held-out cases were written by the same coding agent. No test sentence appears in the checklist (a test checks this), but the checklist names the same kinds of claims the code rules missed, so the LLM-layer score is probably optimistic. A test set written by someone else would be a fairer check.
+- Judge scores are LLM scores, not human ratings. The judge prompt was changed once after seeing results, and the scores moved with it (brand fit 3.55 → 4.19 on the same drafts). Treat them as a rough signal until Sara's ratings exist.
+- Each live task ran once. Model outputs vary between runs, and there are no repeat runs or confidence intervals. OpenRouter doesn't list `temperature` as a supported parameter of `openai/gpt-6-luna`, so the temperature settings may have been ignored for that model.
+- The copy evaluation measured `MODEL_CHEAP` as the writer. The demo app drafts with `MODEL_MAIN`, which wasn't evaluated.
 
 **Next steps:**
 
-1. Run the live evaluations, record the model IDs, cost and results, and have Sara rate the drafts.
-2. Fix the held-out misses: time spans in weeks and "younger" claims, word-form matching for banned words, and the "won't cause breakouts" false positive. Then write a **new** held-out set to measure the change.
-3. Add a native-speaker review of the Arabic and French cases, with label disagreements recorded.
-4. Deploy the Gradio app to a Hugging Face Space, after Sara approves.
+1. Sara rates the 270 drafts in `evals/results/copy_openai_2026-10-08.csv` and compares her scores with the judge's.
+2. Stop drafts from dropping the message on short placements: for example, a check that the primary text says what the product is, and a retry that shortens variants over the length limit. Then re-run the copy evaluation.
+3. Fix the held-out misses: time spans in weeks and "younger" claims, word-form matching for banned words, and the "won't cause breakouts" false positive. Then write a **new** held-out set to measure the change.
+4. Add a native-speaker review of the Arabic and French cases, with label disagreements recorded.
+5. Deploy the Gradio app to a Hugging Face Space, after Sara approves.

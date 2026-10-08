@@ -1,0 +1,25 @@
+id,language,label,rules,llm,combined,llm_unreadable,llm_reasons
+dev-en-01,en,violating,violating,violating,violating,False,Implies the reader has acne and is struggling with their appearance.; Claims the cleanser cures breakouts.; Promises a guaranteed result.
+dev-en-02,en,violating,violating,violating,violating,False,Uses the brand-banned word “flawless.”; Uses banned skin-whitening language (“whitening”).
+dev-en-03,en,violating,violating,violating,violating,False,Uses a before-and-after comparison.; Promises a result within 7 days.
+dev-en-04,en,violating,violating,violating,violating,False,Discount offer is missing a terms line such as “T&Cs apply.”
+dev-en-05,en,compliant,compliant,compliant,compliant,False,
+dev-en-06,en,compliant,compliant,compliant,compliant,False,
+dev-en-07,en,compliant,compliant,compliant,compliant,False,
+dev-en-08,en,compliant,compliant,compliant,compliant,False,
+dev-ar-01,ar,violating,violating,violating,violating,False,"Addresses the reader as having wrinkles and implies dissatisfaction with their appearance.; Claims the cream removes wrinkles, a cosmetic/medical claim.; Promises permanent results."
+dev-ar-02,ar,violating,violating,violating,violating,False,Uses brand-banned miracle and perfect-skin language.; Promises perfect skin within a week.; Uses a sensational “secret” hook.
+dev-ar-03,ar,violating,violating,violating,violating,False,"Uses a before-and-after comparison, which is not allowed."
+dev-ar-04,ar,violating,violating,violating,violating,False,الخصم يحتاج إلى سطر للشروط والأحكام.
+dev-ar-05,ar,compliant,compliant,compliant,compliant,False,
+dev-ar-06,ar,compliant,compliant,compliant,compliant,False,
+dev-ar-07,ar,compliant,compliant,compliant,compliant,False,
+dev-ar-08,ar,compliant,compliant,compliant,compliant,False,
+dev-fr-01,fr,violating,violating,violating,violating,False,"Implies the reader has pimples and feels negatively about them.; Claims to eliminate acne, a medical condition.; Promises a result in 3 days."
+dev-fr-02,fr,violating,violating,violating,violating,False,"« miracle » et « peau parfaite » enfreignent les règles de marque.; « Le secret éclat » utilise un accrocheur de type secret, interdit."
+dev-fr-03,fr,violating,violating,violating,violating,False,Promet un résultat dans un délai précis (« dès la première semaine ») et évoque une comparaison avant/après.
+dev-fr-04,fr,violating,violating,violating,violating,False,La réduction nécessite une mention des conditions (« Voir conditions. »).
+dev-fr-05,fr,compliant,compliant,violating,violating,False,« Frais toute la journée » promet un résultat qui dure toute la journée.
+dev-fr-06,fr,compliant,compliant,compliant,compliant,False,
+dev-fr-07,fr,compliant,compliant,compliant,compliant,False,
+dev-fr-08,fr,compliant,compliant,violating,violating,False,"Promet une peau douce au réveil, ce qui implique un résultat pendant la nuit."

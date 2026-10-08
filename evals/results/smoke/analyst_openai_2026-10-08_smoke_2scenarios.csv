@@ -1,0 +1,17 @@
+scenario,numbers_checked,numbers_matched,mismatches,summary
+all_30_days,22,22,,"The campaign generated AED 95,241.51 in revenue from AED 36,260.51 in spend, with 612 purchases and a ROAS of 2.63.
+
+Vitamin C Serum | Arabic | Stories is the strongest performer: its ROAS is 5.01 overall and 6.05 in the last 7 days. Consider increasing its daily budget from AED 288.20 to AED 345.84. Vitamin C Serum | English | IG Feed also remains above the 2.5 target, so its budget could rise from AED 245.72 to AED 294.86. Monitor CPA for both.
+
+Night Cream | French | Retargeting has a good overall ROAS of 4.08, but its CTR fell from 1.92% to 1.22%. Keep its budget unchanged and refresh the creative before adding budget. Consider cutting Cleanser | Arabic | FB Feed, which has a ROAS of 1.11, below the 1.54 break-even point, and pausing SPF | English | FB Feed, with a ROAS of 0.64.
+
+Overall, the suggested daily budget is AED 916.08 instead of AED 1,205.11. Caution: Eye Patches has only 9 purchases, below the 30-purchase minimum, so its ROAS is not yet reliable. These are suggestions for approval; no changes have been made."
+first_15_days,17,17,,"The campaign generated AED 46,051.78 in revenue from AED 18,156.12 in spend, with ROAS 2.54.
+
+Nightcream retargeting, vitc-ar-stories and vitc-en-igfeed are suggested for scaling: their overall and recent ROAS are at or above target 2.5. The suggested daily budgets are AED 141.08, AED 350.35 and AED 287.53, respectively. Watch CPA as budgets rise.
+
+The cleanser ad is suggested for a cut to AED 137.70 per day because ROAS 1.02 is below break-even 1.54. Eye patches and SPF are suggested to hold their current budgets while gathering more data; each has fewer than 30 purchases.
+
+Overall, the suggested budget moves from AED 1,205.29 per day to AED 1,276.09 per day. Cuts free AED 59.02 per day, while increases add AED 129.82 per day.
+
+Caution: Eye patches has only 3 purchases and SPF has 25, so their results may not yet be reliable. These are suggestions for approval; no changes have been made."

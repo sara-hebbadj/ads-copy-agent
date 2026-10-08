@@ -1,0 +1,25 @@
+id,language,label,rules,llm,combined,llm_unreadable,llm_reasons
+dev-en-01,en,violating,violating,violating,violating,False,Implies the reader has acne and is struggling with it.; Claims the cleanser cures breakouts.; Promises a guaranteed result.
+dev-en-02,en,violating,violating,violating,violating,False,Uses the brand-banned words “flawless” and “whitening.”; No approved call-to-action button type is provided.
+dev-en-03,en,violating,violating,violating,violating,False,Before-and-after comparison is not allowed.; No approved call-to-action button type is provided.
+dev-en-04,en,violating,violating,violating,violating,False,Discount offer is missing a terms line such as “T&Cs apply.”; No approved call-to-action button type is provided.
+dev-en-05,en,compliant,compliant,violating,violating,False,"No call-to-action button is provided.; Placement is unspecified, so the applicable character limits cannot be verified."
+dev-en-06,en,compliant,compliant,violating,violating,False,No call-to-action button type is provided.
+dev-en-07,en,compliant,compliant,violating,violating,False,No call-to-action button type is provided.
+dev-en-08,en,compliant,compliant,violating,violating,False,"No call-to-action button type is provided.; Placement is missing, so the applicable length limit cannot be checked."
+dev-ar-01,ar,violating,violating,violating,violating,False,"The question implies the reader has wrinkles, a personal attribute.; Claims the cream permanently removes wrinkles, an unrealistic result."
+dev-ar-02,ar,violating,violating,violating,violating,False,«بشرة مثالية» و«سحري» يخالفان قائمة الكلمات المحظورة للعلامة التجارية.; «سر الإشراقة» يستخدم صياغة تشويقية من نوع «السر».; لم يُذكر زر دعوة لاتخاذ إجراء من الأنواع المعتمدة.
+dev-ar-03,ar,violating,violating,violating,violating,False,يتضمن مقارنة قبل/بعد، وهي غير مسموح بها.
+dev-ar-04,ar,violating,violating,violating,violating,False,Discount offer is missing «تطبق الشروط والأحكام.»; No approved call-to-action button type is provided
+dev-ar-05,ar,compliant,compliant,violating,violating,False,No call-to-action button type is provided.
+dev-ar-06,ar,compliant,compliant,violating,violating,False,"No call-to-action button type is provided.; Placement is not provided, so the applicable text-length limits cannot be checked."
+dev-ar-07,ar,compliant,compliant,violating,violating,False,"CTA button type is missing.; Placement is missing, so the applicable text-length limits cannot be checked."
+dev-ar-08,ar,compliant,compliant,violating,violating,False,Missing call-to-action button type.
+dev-fr-01,fr,violating,violating,violating,violating,False,"S’adresse au lecteur avec un sentiment négatif lié à sa peau (« Marre de vos boutons ? »).; Affirme que le nettoyant élimine l’acné, une allégation de traitement.; Promet un résultat en 3 jours, délai irréaliste ou garanti."
+dev-fr-02,fr,violating,violating,violating,violating,False,Uses the brand-banned word « miracle » and a « peau parfaite » claim.; « Le secret » is a sensational secret hook.
+dev-fr-03,fr,violating,violating,violating,violating,False,La comparaison « avant/après » est interdite.; « Visible dès la première semaine » promet un résultat dans un délai précis.
+dev-fr-04,fr,violating,violating,violating,violating,False,La réduction n’est accompagnée d’aucune mention « Voir conditions. »; Aucun bouton d’appel à l’action autorisé n’est indiqué.
+dev-fr-05,fr,compliant,compliant,violating,violating,False,« Frais toute la journée » promet un résultat durable.; Aucun bouton d’appel à l’action autorisé n’est indiqué.
+dev-fr-06,fr,compliant,compliant,violating,violating,False,Aucun appel à l’action autorisé n’est indiqué.
+dev-fr-07,fr,compliant,compliant,violating,violating,False,CTA button type is missing.
+dev-fr-08,fr,compliant,compliant,violating,violating,False,"Aucune catégorie de bouton d’appel à l’action valide n’est indiquée.; L’emplacement n’est pas précisé, donc la limite de longueur applicable ne peut pas être vérifiée."

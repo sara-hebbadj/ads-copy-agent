@@ -1,0 +1,36 @@
+scenario,numbers_checked,numbers_matched,mismatches,summary
+all_30_days,16,16,,"The campaign spent AED 36,260.51 and brought in AED 95,241.51 in revenue, with ROAS 2.63. Vitamin C Arabic Stories is the strongest performer: ROAS 5.01 overall and 6.05 in the last 7 days. Vitamin C English IG Feed also remains above the target ROAS 2.5, though its recent ROAS has weakened.
+
+I suggest scaling both Vitamin C ad sets by 20%, while watching CPA. Keep Night Cream Retargeting at its current budget and refresh the creative because CTR fell to 1.22%. Hold Eye Patches at its current budget: 9 purchases is below the 30-purchase minimum, so its ROAS is not reliable. Cut Cleanser Arabic because ROAS 1.11 is below the break-even 1.54. Pause SPF English because ROAS 0.64 means revenue is lower than spend.
+
+Overall, I suggest reducing the daily budget from AED 1,205.11 to AED 916.08. These are recommendations only. The data is synthetic, and the Eye Patches result is based on a small sample."
+first_15_days,18,18,,"Overall, the campaign spent AED 18,156.12 and generated AED 46,051.78 in revenue, with ROAS 2.54.
+
+Vitamin C Serum | Arabic | Stories and Squalane Night Cream | French | Retargeting are the strongest performers, with ROAS 4.47 and 4.85. Vitamin C Serum | English | IG Feed is also above the target ROAS 2.5. Consider scaling these ad sets by 20% to the suggested daily budgets: AED 350.35, AED 141.08, and AED 287.53, respectively. Watch CPA as budgets rise. Night cream’s recent ROAS declined from 5.61 to 4.00, so monitor it closely.
+
+Gentle Foam Cleanser | Arabic | FB Feed has ROAS 1.02, below break-even ROAS 1.54; consider cutting its daily budget to AED 137.70. Hold the eye patches and SPF budgets while collecting more data.
+
+Caution: the eye patches have 3 purchases and SPF has 25, both below the minimum 30 for judging performance, so their ROAS may not be reliable."
+last_15_days,25,25,,"The campaign spent AED 18,104.39 and generated AED 49,189.73 in revenue, with 320 purchases and ROAS 2.72.
+
+Vitamin C Serum | Arabic | Stories is the strongest performer: ROAS 5.56 overall and 6.05 in the last 7 days. Consider scaling from AED 288.20 to AED 345.84 per day and watching CPA. Vitamin C Serum | English | IG Feed is also above the 2.5 target, so consider scaling from AED 245.72 to AED 294.86 per day.
+
+The cleanser’s ROAS 1.20 is below the 1.54 break-even point; consider cutting its budget from AED 195.71 to AED 137.00 per day. The Sun Stick’s ROAS 0.82 is below 1.0, so consider pausing it. Night Cream’s CTR fell 36.46%; keep its budget at AED 119.03 per day and refresh the creative.
+
+Overall, consider reducing daily budget from AED 1,205.11 to AED 916.08. Eye Patches has only 6 purchases, below the 30-purchase minimum, so its ROAS is not yet reliable; hold its budget at AED 19.35 per day and gather more data. These are suggestions only."
+arabic_ad_sets,18,18,,"The campaign delivered AED 50,274.22 in revenue from AED 14,610.22 in spend, with ROAS 3.44—above the target ROAS 2.5.
+
+Vitamin C Stories is the strongest ad set: ROAS 5.01 overall and 6.05 in the last 7 days. Consider scaling its daily budget from AED 288.20 to AED 345.84, an increase of 20%, while watching CPA.
+
+The cleanser ad set is underperforming: ROAS 1.11 is below the break-even 1.54, so it loses money after product costs. Consider cutting its daily budget from AED 195.71 to AED 137.00, a cut of 30%. The suggested overall daily budget is AED 482.84, versus AED 483.91 currently.
+
+These are suggestions only; no changes have been made. Caution: the data is synthetic and covers 30 days, so results may not persist."
+english_ad_sets,21,21,,"The campaign generated AED 30,498.97 in revenue on AED 18,105.42 in spend, with a ROAS of 1.68—below the 2.5 target.
+
+Vitamin C Serum is the strongest ad set: its overall ROAS is 3.12, and its last 7 days ROAS is 2.53, meeting the target. Consider scaling its daily budget from AED 245.72 to AED 294.86, while monitoring CPA.
+
+Eye Patches has a ROAS of 2.24, but only 9 purchases. Consider holding its budget at AED 19.35 per day and collecting more data before judging performance.
+
+Sun Stick SPF 50+ has a ROAS of 0.64, below 1.0, and brought back less revenue than it spent. Consider pausing it, reducing its daily budget from AED 337.10 to AED 0.00.
+
+Together, the suggestions would move the daily budget from AED 602.17 to AED 314.21. Caution: the Eye Patches result is based on only 9 purchases, below the 30-purchase minimum for judging performance."

@@ -49,7 +49,8 @@ In the **Write** tab, draft the retinol brief. The offline fake drafts are missi
    - a feminine French word form;
    - one false positive.
    "That's why there's an LLM layer and a human."
-4. "The LLM evaluations are ready to run, but they're pending a key."
+4. Open `evals/results/policy_llm_openai_2026-10-08_summary.json` (first live run, 8 October 2026). Adding the LLM reviewer (`openai/gpt-6-luna`) on the same 48 cases raised recall from 0.67 (16/24) to 1.00 (24/24) and lowered precision from 0.94 (16/17) to 0.89 (24/27). "The first smoke run failed every ad for 'no call-to-action button', because the reviewer was asked to check a field it was never sent."
+5. Open `evals/results/copy_judge_comparison.json`. "The judge first marked down the offer lines the brief requires, because it wasn't shown the offer. With the full brief, it found the real problem: on 72-character reels with an offer, the drafts drop the product message (brand fit 1.85 on 27 drafts). Judge scores aren't human scores."
 
 ## 10 interview questions with short model answers
 

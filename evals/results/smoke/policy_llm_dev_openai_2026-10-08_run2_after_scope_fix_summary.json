@@ -1,0 +1,139 @@
+{
+  "task": "policy_llm",
+  "date": "2026-10-08",
+  "model": "openai/gpt-6-luna",
+  "split": "dev",
+  "rules_sha256": {
+    "src/ads_agent/policy_rules.py": "eaf02f50cece1a26",
+    "src/ads_agent/checker.py": "2440cfdb9da8f7c8",
+    "data/brand.json": "028547e43bb73675"
+  },
+  "rules_only": {
+    "n": 24,
+    "tp": 12,
+    "fp": 0,
+    "fn": 0,
+    "tn": 12,
+    "precision": 1.0,
+    "recall": 1.0,
+    "accuracy": 1.0,
+    "by_language": {
+      "en": {
+        "n": 8,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "ar": {
+        "n": 8,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "fr": {
+        "n": 8,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      }
+    }
+  },
+  "llm_only": {
+    "n": 24,
+    "tp": 12,
+    "fp": 2,
+    "fn": 0,
+    "tn": 10,
+    "precision": 0.857,
+    "recall": 1.0,
+    "accuracy": 0.917,
+    "by_language": {
+      "en": {
+        "n": 8,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "ar": {
+        "n": 8,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "fr": {
+        "n": 8,
+        "tp": 4,
+        "fp": 2,
+        "fn": 0,
+        "tn": 2,
+        "precision": 0.667,
+        "recall": 1.0,
+        "accuracy": 0.75
+      }
+    }
+  },
+  "rules_or_llm": {
+    "n": 24,
+    "tp": 12,
+    "fp": 2,
+    "fn": 0,
+    "tn": 10,
+    "precision": 0.857,
+    "recall": 1.0,
+    "accuracy": 0.917,
+    "by_language": {
+      "en": {
+        "n": 8,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "ar": {
+        "n": 8,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0
+      },
+      "fr": {
+        "n": 8,
+        "tp": 4,
+        "fp": 2,
+        "fn": 0,
+        "tn": 2,
+        "precision": 0.667,
+        "recall": 1.0,
+        "accuracy": 0.75
+      }
+    }
+  },
+  "llm_unreadable": 0,
+  "cost_usd": 0.002
+}

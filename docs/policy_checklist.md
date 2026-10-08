@@ -6,6 +6,8 @@ It's a **simplified demo** for the fictional shop Lumi Skin. The policy items ar
 
 An ad **fails** if it breaks any item from 1 to 8. Items marked "warn" are allowed, but a person should check them.
 
+**Note for the LLM reviewer:** you only see the language, the primary text and the headline. Length (item 7) and the call-to-action button (item 8) are checked exactly by code. Don't fail an ad because the placement or the button isn't shown. Judge the wording against items 1 to 6.
+
 ## 1. Personal attributes
 
 Don't say or imply that the reader has a health or skin condition, a body feature, an age, or a negative feeling about how they look.

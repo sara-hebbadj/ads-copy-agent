@@ -3,13 +3,25 @@
 | Task | Command | Needs a key? | Output |
 |---|---|---|---|
 | Policy checker, code rules only | `python -m evals.run --task policy` | No | `results/policy_rules_*.csv`, `results/policy_rules_summary.json` |
-| Policy checker with the LLM review layer | `python -m evals.run --task policy-llm --model cheap` | Yes | `results/policy_llm_<family>_<date>*` |
-| Copy quality (drafts → rule check → judge) | `python -m evals.run --task copy --model main --limit 10` | Yes | `results/copy_<family>_<date>*`; the CSV is also Sara's rating sheet |
+| Policy checker with the LLM review layer, smoke run on the dev set | `python -m evals.run --task policy-llm --model cheap --split dev` | Yes | `results/policy_llm_dev_<family>_<date>*` |
+| Policy checker with the LLM review layer, held-out set (run once, after the prompt is settled) | `python -m evals.run --task policy-llm --model cheap` | Yes | `results/policy_llm_<family>_<date>*` |
+| Copy quality (drafts → rule check → judge) | `python -m evals.run --task copy --model cheap` (the 8 October run used MODEL_CHEAP; `--model main` also works) | Yes | `results/copy_<family>_<date>*`; the CSV is also Sara's rating sheet |
 | Analyst number check | `python -m evals.run --task analyst --model cheap` | Yes | `results/analyst_<family>_<date>*` |
 | Everything | `python -m evals.run --model cheap --limit 10` | Partly | LLM tasks print `PENDING` if there's no key |
 | Pipeline check with a fake model | `python -m evals.run --dry-run` | No | `dry_run/`. **Not results.** |
 
 Each model call is appended to `traces.jsonl` with the model, tokens, cost, latency and outcome. A run stops if it costs more than `MAX_COST_PER_RUN_USD`. The judge must come from a different model family than the writer, and the runner refuses to start otherwise.
+
+## Live results of 8 October 2026 (`results/`)
+
+| File | What it is |
+|---|---|
+| `policy_llm_openai_2026-10-08*` | Rules vs LLM vs rules OR LLM on the 48 held-out cases (`openai/gpt-6-luna`) |
+| `copy_openai_2026-10-08.csv`, `copy_openai_2026-10-08_summary.json` | 270 drafts, rule check and **judge v1** scores. The CSV is also Sara's rating sheet |
+| `copy_openai_2026-10-08_judge_v2*` | The same 270 drafts re-scored by **judge v2** |
+| `copy_judge_comparison.json` | v1 vs v2, made by `python -m evals.compare_judges <v1.csv> <v2.csv>` |
+| `analyst_openai_2026-10-08*` | 5 summaries, the number check, and the coding agent's manual attribution audit |
+| `smoke/` | Smoke runs (development set, 1 brief, 2 scenarios). Not results |
 
 ## Policy cases (`data/`)
 
