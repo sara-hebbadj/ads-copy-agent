@@ -6,13 +6,30 @@ Built for a fictional skincare shop, "Lumi Skin", with synthetic data only. Ther
 
 ## Demo
 
-Demo video/Space: pending — to be recorded by Sara.
+Live hosted demo: coming soon (Hugging Face Space).
 
 The Gradio app has three tabs:
 
 - **Write**: pick a brief, draft and check the variants, then approve, edit or reject each one.
 - **Check**: paste any ad text and see pass or fail with reasons.
 - **Analyse**: metrics, trends, budget suggestions, a chart and a summary whose numbers are checked.
+
+Screenshots from a local run on 8 October 2026 with live AI (`openai/gpt-6-luna` through OpenRouter for both the drafts and the summary). Nothing was posted anywhere.
+
+![Write, Check and Analyse tabs in turn](docs/demo/demo.gif)
+*Write, Check, Analyse: drafts for a brief, a non-compliant ad flagged, and the campaign analysis.*
+
+![Logged decisions for nine drafted variants](docs/demo/write-drafts-decisions.png)
+*Write tab, vitamin C serum brief: 9 drafts (EN, AR, FR) checked and logged; the 6 Arabic and French drafts were over the 125-character feed limit, so the checker rejected them.*
+
+![The Check tab failing a non-compliant ad on three rules](docs/demo/check-flags-ad.png)
+*Check tab: "Are you struggling with acne? Our serum cures it fast." / "Results guaranteed" fails three rules.*
+
+![LLM summary with its number check above the ROAS chart](docs/demo/analyse-summary-chart.png)
+*Analyse tab: the LLM summary, with every number found in the computed facts, above the 7-day ROAS chart.*
+
+![Rule-based budget suggestions with reasons](docs/demo/analyse-budget-suggestions.png)
+*Rule-based budget suggestions per ad set, with the reasons and the stated assumptions.*
 
 ![7-day rolling ROAS per ad set, with the suggested action](docs/campaign_roas.png)
 

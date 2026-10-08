@@ -2,12 +2,14 @@
 
 Run:  python app/app.py     then open http://127.0.0.1:7860
 
-Without OPENROUTER_API_KEY the app runs in OFFLINE mode: drafts are canned placeholders
-from FakeLLM and the campaign summary is a fixed template. Nothing is ever posted.
+Without OPENROUTER_API_KEY (and MODEL_MAIN / MODEL_CHEAP) the app runs in demo mode: drafts are
+canned placeholders from FakeLLM and the campaign summary is a fixed template. Nothing is ever
+posted. On a Hugging Face Space, add the key as a secret and the model IDs as variables.
 """
 
 from __future__ import annotations
 
+import os
 import sys
 from pathlib import Path
 
@@ -32,12 +34,15 @@ from ads_agent.graph import build_graph, finish_run, start_run  # noqa: E402
 from ads_agent.llm import FakeLLM, LLMClient, has_api_key  # noqa: E402
 from ads_agent.policy_rules import PLACEMENT_LIMITS  # noqa: E402
 
-LIVE = has_api_key()
+# Live only when the key and both model IDs are set, so a half-configured Space still starts.
+LIVE = has_api_key() and bool(os.getenv("MODEL_MAIN") and os.getenv("MODEL_CHEAP"))
 MODE_NOTE = (
     "**Live mode:** drafts come from the model set in `MODEL_MAIN` (OpenRouter)."
     if LIVE
-    else "**Offline mode (no API key):** drafts are canned placeholders from `FakeLLM`, "
-    "not model output. The checker, approval log and analysis are real code."
+    else "**Demo mode — live AI is off; add OPENROUTER_API_KEY in Space settings to enable** "
+    "(plus `MODEL_MAIN` and `MODEL_CHEAP` variables). Drafts in the Write tab are canned "
+    "placeholders from `FakeLLM`, not model output. The **Check** and **Analyse** tabs, the "
+    "approval log and the number check are real code and work fully."
 )
 BRIEF_IDS = [b["id"] for b in list_briefs()]
 GRAPH = build_graph(LLMClient("main") if LIVE else FakeLLM(), reviewer="gradio-demo")
