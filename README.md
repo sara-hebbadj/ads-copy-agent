@@ -6,7 +6,9 @@ Built for a fictional skincare shop, "Lumi Skin", with synthetic data only. Ther
 
 ## Demo
 
-Live hosted demo: coming soon (Hugging Face Space).
+**Live demo:** [huggingface.co/spaces/sarahebbadj/ads-copy-agent](https://huggingface.co/spaces/sarahebbadj/ads-copy-agent) (works without an API key, in demo mode).
+
+To enable live AI on your own copy: add `OPENROUTER_API_KEY` as a Space secret (and `MODEL_MAIN` and `MODEL_CHEAP` as variables).
 
 The Gradio app has three tabs:
 

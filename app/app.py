@@ -163,7 +163,14 @@ with gr.Blocks(title="Ads copy agent (demo)") as demo:
             "Set **action** to `approve`, `edit` (fill the edited columns) or `reject`. "
             "A variant that fails the checker cannot be approved as it is."
         )
-        review_table = gr.Dataframe(interactive=True, wrap=True, label="Variants to review")
+        # Fixed widths: without them the empty "edited_*" columns shrink to ~30 px and their
+        # wrapped headers make the header row about 400 px tall. Order matches draft()'s columns.
+        review_table = gr.Dataframe(
+            interactive=True,
+            wrap=True,
+            label="Variants to review",
+            column_widths=["6%", "23%", "12%", "8%", "14%", "8%", "16%", "13%"],
+        )
         submit_btn = gr.Button("Submit decisions")
         submit_msg = gr.Markdown()
         result_table = gr.Dataframe(label="Logged decisions", wrap=True)

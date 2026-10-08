@@ -104,8 +104,8 @@ In the **Write** tab, draft the retinol brief. The offline fake drafts are missi
 
 1. **Change the target ROAS.**
    - In `src/ads_agent/budget.py`, set `TARGET_ROAS = 3.5`.
-   - Run `uv run pytest -q`. `test_suggestions_on_the_synthetic_campaign` fails because `vitc-en-igfeed` (ROAS 3.12) is no longer a SCALE.
-   - Explain why the test protects behaviour, update the expectation to `KEEP`, and check the Analyse tab.
+   - Run `uv run pytest -q`. Two tests fail: `test_suggestions_on_the_synthetic_campaign`, because `vitc-en-igfeed` (ROAS 3.12) is no longer a SCALE, and the `SCALE` case of `test_budget_rules` (ROAS 4.0 overall but 3.0 in the last 7 days, now below the target).
+   - Explain why the tests protect behaviour, update both expectations to `KEEP` (or raise the test's last-7-days ROAS above 3.5 to keep testing SCALE), and check the Analyse tab.
 
 2. **Add an Arabic condition word.**
    - Add `"الهالات السوداء"` (dark circles) to `CONDITIONS["ar"]` in `policy_rules.py`.
