@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# Environments and secrets (never commit keys)
+.venv/
+.env
+.env.*
+!.env.example
+
+# Local run output
+logs/
+.gradio/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

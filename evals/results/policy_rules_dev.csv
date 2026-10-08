@@ -1,0 +1,25 @@
+id,language,label,predicted,failed_rules,checker_output,primary_text,headline
+dev-en-01,en,violating,violating,medical_claim;personal_attribute;unrealistic_claim,FAIL: medical_claim (primary_text): Says the product cures something; personal_attribute (primary_text): Says or implies the reader has a skin or health condition; unrealistic_claim (headline): Guaranteed results,Are you struggling with acne? Our cleanser cures breakouts fast.,"Clear skin, guaranteed"
+dev-en-02,en,violating,violating,banned_word,FAIL: banned_word (primary_text): Brand-banned word 'flawless'; banned_word (primary_text): Brand-banned word 'whitening',"Get flawless, whitening results with our new glow serum.",Your glow upgrade
+dev-en-03,en,violating,violating,before_after,FAIL: before_after (primary_text): Before/after claim,Before & after: see the difference in 7 days.,Real results
+dev-en-04,en,violating,violating,missing_disclaimer,FAIL: missing_disclaimer (primary_text): Offer without terms line (add e.g. 'T&Cs apply.'),Flash sale: 30% off all serums this weekend only.,30% off serums
+dev-en-05,en,compliant,compliant,,PASS,A lightweight gel moisturiser made for oily skin. Feels fresh all day in the UAE heat.,Light. Fresh. Daily.
+dev-en-06,en,compliant,compliant,,PASS,Vitamin C 15% serum for a fresh-looking glow. Use daily after cleansing.,"Morning glow, simply"
+dev-en-07,en,compliant,compliant,,PASS,Save 20% on your first order with code GLOW20. T&Cs apply.,20% off your first order
+dev-en-08,en,compliant,compliant,,PASS,Treat yourself to a calm evening routine with our squalane night cream.,Softer mornings
+dev-ar-01,ar,violating,violating,medical_claim;personal_attribute;unrealistic_claim,FAIL: medical_claim (primary_text): يعد بإزالة حالة جلدية; unrealistic_claim (primary_text): نتيجة دائمة; personal_attribute (primary_text): Says or implies the reader has a skin or health condition,هل تعانين من التجاعيد؟ كريمنا يزيل التجاعيد نهائياً.,وداعاً للتجاعيد
+dev-ar-02,ar,violating,violating,banned_word,FAIL: banned_word (primary_text): Brand-banned word 'سحري'; banned_word (primary_text): Brand-banned word 'بشرة مثالية',سيروم سحري لبشرة مثالية خلال أسبوع.,سر الإشراقة
+dev-ar-03,ar,violating,violating,before_after,FAIL: before_after (primary_text): ادعاء قبل/بعد,صور قبل وبعد تثبت الفرق! جربيه الآن.,الفرق واضح
+dev-ar-04,ar,violating,violating,missing_disclaimer,FAIL: missing_disclaimer (primary_text): Offer without terms line (add e.g. 'تطبق الشروط والأحكام.'),خصم 25% على كل واقيات الشمس هذا الأسبوع.,خصم 25%
+dev-ar-05,ar,compliant,compliant,,PASS,مرطب جل خفيف للبشرة الدهنية، يمنح إحساساً بالانتعاش طوال اليوم.,خفيف ومنعش
+dev-ar-06,ar,compliant,compliant,,PASS,غسول لطيف بالشاي الأخضر لروتين صباحي بسيط ومنعش.,بداية صباحك
+dev-ar-07,ar,compliant,compliant,,PASS,خصم 20% على طلبك الأول بكود LUMI20. تطبق الشروط والأحكام.,عرض الطلب الأول
+dev-ar-08,ar,compliant,compliant,,PASS,واقي شمس خفيف بعامل حماية 50+ للاستخدام اليومي تحت شمس الإمارات.,حماية يومية خفيفة
+dev-fr-01,fr,violating,violating,medical_claim;personal_attribute,FAIL: medical_claim (primary_text): Promet de supprimer une affection; personal_attribute (primary_text): Says or implies the reader has a skin or health condition,Marre de vos boutons ? Notre nettoyant élimine l'acné en 3 jours.,Adieu les boutons
+dev-fr-02,fr,violating,violating,banned_word,FAIL: banned_word (primary_text): Brand-banned word 'miracle'; banned_word (primary_text): Brand-banned word 'peau parfaite',Une crème miracle pour une peau parfaite.,Le secret éclat
+dev-fr-03,fr,violating,violating,before_after,FAIL: before_after (primary_text): Allégation avant/après,Effet avant/après visible dès la première semaine.,La preuve en images
+dev-fr-04,fr,violating,violating,missing_disclaimer,FAIL: missing_disclaimer (primary_text): Offer without terms line (add e.g. 'Voir conditions.'),-30 % sur tous les sérums ce week-end seulement !,Sérums à -30 %
+dev-fr-05,fr,compliant,compliant,,PASS,"Un gel hydratant léger pour peaux grasses, frais toute la journée.",Léger et frais
+dev-fr-06,fr,compliant,compliant,,PASS,Sérum vitamine C 15 % pour un teint plus lumineux. À appliquer le matin.,L'éclat du matin
+dev-fr-07,fr,compliant,compliant,,PASS,-20 % sur votre première commande avec le code LUMI20. Voir conditions.,Bienvenue chez Lumi
+dev-fr-08,fr,compliant,compliant,,PASS,Une crème de nuit au squalane pour une peau douce au réveil.,Des réveils tout doux

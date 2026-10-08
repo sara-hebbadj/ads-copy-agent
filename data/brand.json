@@ -1,0 +1,15 @@
+{
+  "brand": "Lumi Skin",
+  "note": "Fictional skincare shop used for this demo. Not a real company.",
+  "voice": "Warm, simple and honest. Talk about how the product feels, what it contains and how to use it, never about fixing the reader. Short sentences. At most one exclamation mark and one emoji. No pressure tactics, no fear, no promises about results.",
+  "languages": {
+    "en": "Clear, friendly English for UAE residents. British spelling (moisturiser, colour).",
+    "ar": "Modern Standard Arabic that reads naturally in the UAE. Write it fresh in Arabic, do not translate word for word from English. Address women with feminine forms when the audience is women.",
+    "fr": "Natural French, 'vous' form. Use the French typographic space before ! ? : and %."
+  },
+  "banned_words": {
+    "en": ["miracle", "magic", "flawless", "perfect skin", "whitening", "fairness", "bleach", "anti-aging", "anti-ageing", "chemical-free", "cheap"],
+    "ar": ["معجزة", "سحري", "سحرية", "تبييض", "مبيض", "بشرة مثالية", "مضاد للشيخوخة", "خالي من المواد الكيميائية", "رخيص"],
+    "fr": ["miracle", "miraculeux", "miraculeuse", "magique", "peau parfaite", "blanchissant", "blanchiment", "anti-âge", "sans produits chimiques", "pas cher"]
+  }
+}

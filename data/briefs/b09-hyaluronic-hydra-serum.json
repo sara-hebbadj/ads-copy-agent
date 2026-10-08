@@ -1,0 +1,24 @@
+{
+  "id": "b09-hyaluronic-hydra-serum",
+  "product_id": "P011",
+  "product": "Hyaluronic Hydra Serum",
+  "category": "serum",
+  "skin_type": "dry",
+  "key_ingredients": [
+    "hyaluronic acid",
+    "panthenol"
+  ],
+  "price_aed": 99,
+  "audience": "Adults aged 25-50 in the UAE who spend long days in air-conditioned offices",
+  "key_message": "A few drops of hyaluronic acid for a routine step that feels light and easy.",
+  "offer": null,
+  "tone": "warm and calm",
+  "placement": "stories",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {}
+}

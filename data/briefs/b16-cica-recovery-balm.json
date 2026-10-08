@@ -1,0 +1,24 @@
+{
+  "id": "b16-cica-recovery-balm",
+  "product_id": "P020",
+  "product": "Cica Recovery Balm",
+  "category": "moisturiser",
+  "skin_type": "sensitive",
+  "key_ingredients": [
+    "centella asiatica",
+    "panthenol"
+  ],
+  "price_aed": 99,
+  "audience": "Adults aged 22-50 in the UAE who prefer gentle, fragrance-light products",
+  "key_message": "Comfortable hydration with centella asiatica that suits the UAE climate.",
+  "offer": "15% off with code LUMI15 until 31 October 2026",
+  "tone": "fresh and upbeat",
+  "placement": "instagram_feed",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {}
+}

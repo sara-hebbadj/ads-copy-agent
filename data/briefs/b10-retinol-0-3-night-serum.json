@@ -1,0 +1,28 @@
+{
+  "id": "b10-retinol-0-3-night-serum",
+  "product_id": "P012",
+  "product": "Retinol 0.3% Night Serum",
+  "category": "serum",
+  "skin_type": "combination",
+  "key_ingredients": [
+    "retinol 0.3%",
+    "squalane"
+  ],
+  "price_aed": 139,
+  "audience": "Adults aged 22-40 in the UAE who want one product for the whole face",
+  "key_message": "A few drops of retinol 0.3% for a routine step that feels light and easy.",
+  "offer": null,
+  "tone": "fresh and upbeat",
+  "placement": "facebook_feed",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {
+    "en": "Patch test first.",
+    "ar": "اختبريه على منطقة صغيرة أولاً.",
+    "fr": "Faites un test cutané avant usage."
+  }
+}

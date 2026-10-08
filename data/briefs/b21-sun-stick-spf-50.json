@@ -1,0 +1,43 @@
+{
+  "id": "b21-sun-stick-spf-50",
+  "product_id": "P028",
+  "product": "Sun Stick SPF 50+",
+  "category": "sunscreen",
+  "skin_type": "all",
+  "key_ingredients": [
+    "UV filters",
+    "jojoba oil"
+  ],
+  "price_aed": 79,
+  "audience": "Women and men aged 22-45 in the UAE who want a simple daily routine",
+  "key_message": "Daily sun protection that is light enough to wear every day.",
+  "offer": "15% off with code LUMI15 until 31 October 2026",
+  "tone": "warm and calm",
+  "placement": "stories",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {
+    "en": [
+      "sunblock",
+      "waterproof",
+      "all-day protection"
+    ],
+    "ar": [
+      "مقاوم للماء تماماً",
+      "حماية طوال اليوم"
+    ],
+    "fr": [
+      "écran total",
+      "waterproof",
+      "protection toute la journée"
+    ]
+  },
+  "required_disclaimers": {
+    "en": "Reapply every 2 hours.",
+    "ar": "أعيدي وضعه كل ساعتين.",
+    "fr": "Renouvelez toutes les 2 heures."
+  }
+}

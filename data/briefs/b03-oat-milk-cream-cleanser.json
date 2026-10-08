@@ -1,0 +1,24 @@
+{
+  "id": "b03-oat-milk-cream-cleanser",
+  "product_id": "P003",
+  "product": "Oat Milk Cream Cleanser",
+  "category": "cleanser",
+  "skin_type": "dry",
+  "key_ingredients": [
+    "colloidal oat",
+    "shea butter"
+  ],
+  "price_aed": 69,
+  "audience": "Adults aged 25-50 in the UAE who spend long days in air-conditioned offices",
+  "key_message": "A gentle daily cleanse that leaves skin clean and comfortable, not tight.",
+  "offer": "Free Honey Glow Mask sample with orders over AED 200",
+  "tone": "warm and calm",
+  "placement": "reels",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {}
+}

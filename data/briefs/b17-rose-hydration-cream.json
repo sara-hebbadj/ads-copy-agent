@@ -1,0 +1,24 @@
+{
+  "id": "b17-rose-hydration-cream",
+  "product_id": "P021",
+  "product": "Rose Hydration Cream",
+  "category": "moisturiser",
+  "skin_type": "all",
+  "key_ingredients": [
+    "rose water",
+    "glycerin"
+  ],
+  "price_aed": 95,
+  "audience": "Women and men aged 22-45 in the UAE who want a simple daily routine",
+  "key_message": "Comfortable hydration with rose water that suits the UAE climate.",
+  "offer": null,
+  "tone": "expert but simple",
+  "placement": "stories",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {}
+}

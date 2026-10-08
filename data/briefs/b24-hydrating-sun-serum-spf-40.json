@@ -1,0 +1,43 @@
+{
+  "id": "b24-hydrating-sun-serum-spf-40",
+  "product_id": "P031",
+  "product": "Hydrating Sun Serum SPF 40",
+  "category": "sunscreen",
+  "skin_type": "dry",
+  "key_ingredients": [
+    "UV filters",
+    "hyaluronic acid"
+  ],
+  "price_aed": 109,
+  "audience": "Adults aged 25-50 in the UAE who spend long days in air-conditioned offices",
+  "key_message": "Daily sun protection that is light enough to wear every day.",
+  "offer": null,
+  "tone": "warm and calm",
+  "placement": "instagram_feed",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {
+    "en": [
+      "sunblock",
+      "waterproof",
+      "all-day protection"
+    ],
+    "ar": [
+      "مقاوم للماء تماماً",
+      "حماية طوال اليوم"
+    ],
+    "fr": [
+      "écran total",
+      "waterproof",
+      "protection toute la journée"
+    ]
+  },
+  "required_disclaimers": {
+    "en": "Reapply every 2 hours.",
+    "ar": "أعيدي وضعه كل ساعتين.",
+    "fr": "Renouvelez toutes les 2 heures."
+  }
+}

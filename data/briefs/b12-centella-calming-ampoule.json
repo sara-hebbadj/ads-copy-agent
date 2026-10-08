@@ -1,0 +1,24 @@
+{
+  "id": "b12-centella-calming-ampoule",
+  "product_id": "P014",
+  "product": "Centella Calming Ampoule",
+  "category": "serum",
+  "skin_type": "sensitive",
+  "key_ingredients": [
+    "centella asiatica",
+    "madecassoside"
+  ],
+  "price_aed": 119,
+  "audience": "Adults aged 22-50 in the UAE who prefer gentle, fragrance-light products",
+  "key_message": "A few drops of centella asiatica for a routine step that feels light and easy.",
+  "offer": null,
+  "tone": "warm and calm",
+  "placement": "instagram_feed",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {}
+}

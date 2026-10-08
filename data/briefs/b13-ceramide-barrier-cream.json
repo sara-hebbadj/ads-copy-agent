@@ -1,0 +1,25 @@
+{
+  "id": "b13-ceramide-barrier-cream",
+  "product_id": "P017",
+  "product": "Ceramide Barrier Cream",
+  "category": "moisturiser",
+  "skin_type": "dry",
+  "key_ingredients": [
+    "ceramides",
+    "cholesterol",
+    "fatty acids"
+  ],
+  "price_aed": 119,
+  "audience": "Adults aged 25-50 in the UAE who spend long days in air-conditioned offices",
+  "key_message": "Comfortable hydration with ceramides that suits the UAE climate.",
+  "offer": "Free Honey Glow Mask sample with orders over AED 200",
+  "tone": "fresh and upbeat",
+  "placement": "stories",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {}
+}

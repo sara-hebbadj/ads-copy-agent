@@ -1,0 +1,31 @@
+{
+  "task": "copy",
+  "date": "2026-10-08",
+  "writer_model": "fake/offline-canned",
+  "judge_model": "fake/offline-canned",
+  "briefs": 30,
+  "briefs_failed_to_parse": [],
+  "variants": 270,
+  "cost_usd": 0.0,
+  "rule_pass_rate": 0.611,
+  "by_language": {
+    "ar": {
+      "variants": 90,
+      "rule_pass_rate": 0.7,
+      "judge_brand_fit_mean": 3.0,
+      "judge_language_quality_mean": 3.0
+    },
+    "en": {
+      "variants": 90,
+      "rule_pass_rate": 0.567,
+      "judge_brand_fit_mean": 3.0,
+      "judge_language_quality_mean": 3.0
+    },
+    "fr": {
+      "variants": 90,
+      "rule_pass_rate": 0.567,
+      "judge_brand_fit_mean": 3.0,
+      "judge_language_quality_mean": 3.0
+    }
+  }
+}

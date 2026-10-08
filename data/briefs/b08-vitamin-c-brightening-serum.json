@@ -1,0 +1,24 @@
+{
+  "id": "b08-vitamin-c-brightening-serum",
+  "product_id": "P010",
+  "product": "Vitamin C Brightening Serum",
+  "category": "serum",
+  "skin_type": "all",
+  "key_ingredients": [
+    "vitamin C 15%",
+    "ferulic acid"
+  ],
+  "price_aed": 149,
+  "audience": "Women and men aged 22-45 in the UAE who want a simple daily routine",
+  "key_message": "A few drops of vitamin C 15% for a routine step that feels light and easy.",
+  "offer": "Free Honey Glow Mask sample with orders over AED 200",
+  "tone": "expert but simple",
+  "placement": "instagram_feed",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {}
+}

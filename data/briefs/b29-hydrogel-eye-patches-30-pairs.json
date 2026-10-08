@@ -1,0 +1,24 @@
+{
+  "id": "b29-hydrogel-eye-patches-30-pairs",
+  "product_id": "P037",
+  "product": "Hydrogel Eye Patches (30 pairs)",
+  "category": "mask",
+  "skin_type": "all",
+  "key_ingredients": [
+    "caffeine",
+    "peptides"
+  ],
+  "price_aed": 65,
+  "audience": "Women and men aged 22-45 in the UAE who want a simple daily routine",
+  "key_message": "A short self-care moment with caffeine.",
+  "offer": null,
+  "tone": "expert but simple",
+  "placement": "stories",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {}
+}

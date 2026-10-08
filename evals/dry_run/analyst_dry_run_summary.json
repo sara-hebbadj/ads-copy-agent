@@ -1,0 +1,10 @@
+{
+  "task": "analyst",
+  "date": "2026-10-08",
+  "model": "fake/offline-canned",
+  "summaries": 5,
+  "summaries_without_mismatch": 5,
+  "numbers_checked": 145,
+  "numbers_matched": 145,
+  "cost_usd": 0.0
+}

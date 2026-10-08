@@ -1,0 +1,24 @@
+{
+  "id": "b11-snail-mucin-repair-essence",
+  "product_id": "P013",
+  "product": "Snail Mucin Repair Essence",
+  "category": "serum",
+  "skin_type": "all",
+  "key_ingredients": [
+    "snail mucin 96%",
+    "allantoin"
+  ],
+  "price_aed": 109,
+  "audience": "Women and men aged 22-45 in the UAE who want a simple daily routine",
+  "key_message": "A few drops of snail mucin 96% for a routine step that feels light and easy.",
+  "offer": "15% off with code LUMI15 until 31 October 2026",
+  "tone": "expert but simple",
+  "placement": "reels",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {}
+}

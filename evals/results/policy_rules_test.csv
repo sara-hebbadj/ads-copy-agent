@@ -1,0 +1,49 @@
+id,language,label,predicted,failed_rules,checker_output,primary_text,headline
+test-en-01,en,violating,violating,unrealistic_claim,FAIL: unrealistic_claim (primary_text): Permanent or forever result,Say goodbye to dark spots forever with our Vitamin C serum.,Glow that lasts
+test-en-02,en,violating,violating,medical_claim,FAIL: medical_claim (primary_text): Promises to remove a skin or health condition,Breaking out before your big day? This mask clears pimples overnight.,Clear skin by morning
+test-en-03,en,violating,compliant,,PASS,Feeling self-conscious about your skin? You don't have to hide anymore.,Love your skin again
+test-en-04,en,violating,compliant,,PASS,Look 10 years younger in just two weeks with our peptide serum.,Turn back time
+test-en-05,en,violating,compliant,,PASS,Dermatologists don't want you to know this one trick for glowing skin.,The secret is out
+test-en-06,en,violating,violating,missing_disclaimer,FAIL: missing_disclaimer (primary_text): Offer without terms line (add e.g. 'T&Cs apply.'),"Smoother-looking skin from week one. 40% off today only, don't miss out.",Retinol night serum
+test-en-07,en,violating,violating,length,FAIL: length (headline): 47 characters > 27 for facebook_feed,"Hydration that lasts all day, even in the office AC.",The lightweight moisturiser your skin will love
+test-en-08,en,violating,violating,banned_word,FAIL: banned_word (primary_text): Brand-banned word 'anti-aging',Anti-aging power in a bottle: meet our Peptide Firming Serum.,"Firm, smooth, radiant"
+test-en-09,en,compliant,compliant,,PASS,"Our Salicylic Acne Cleanser has 2% salicylic acid and tea tree, made for oily, acne-prone skin.","Clean, not stripped"
+test-en-10,en,compliant,compliant,,PASS,Not in love with it? Return unopened products within 14 days. Satisfaction guaranteed.,"Try it, worry-free"
+test-en-11,en,compliant,compliant,,PASS,Helps reduce the look of dark spots with daily use. Pair with SPF in the morning.,An even-looking glow
+test-en-12,en,compliant,compliant,,PASS,"Wear it under makeup or on its own. SPF 50+ with a light, non-greasy finish.",Sun care for every day
+test-en-13,en,compliant,compliant,,PASS,"Your evening routine, simplified: cleanse, two drops, sleep.",Two drops before bed
+test-en-14,en,compliant,violating,personal_attribute,FAIL: personal_attribute (primary_text): Says or implies the reader has a skin or health condition,"This oil-free gel won't clog your pores or cause breakouts. Just a fresh, matte feel.","Matte, never heavy"
+test-en-15,en,compliant,compliant,,PASS,"Buy two sheet masks, get one free this Ramadan. T&Cs apply.",Ramadan mask offer
+test-en-16,en,compliant,compliant,,PASS,Hydrogel eye patches with caffeine to help you look refreshed after a long flight.,Fresh-looking eyes
+test-ar-01,ar,violating,violating,unrealistic_claim,FAIL: unrealistic_claim (primary_text): نتيجة دائمة,ودّعي الكلف والتصبغات إلى الأبد مع سيروم فيتامين سي.,إشراقة تدوم
+test-ar-02,ar,violating,violating,personal_attribute,FAIL: personal_attribute (primary_text): Says or implies the reader has a skin or health condition,بشرتك تعاني من الجفاف والحبوب؟ لا تقلقي، لدينا الحل.,الحل عندنا
+test-ar-03,ar,violating,violating,medical_claim,FAIL: medical_claim (primary_text): يدّعي علاج حالة,كريم يعالج الأكزيما ويهدئ البشرة الحساسة.,راحة فورية
+test-ar-04,ar,violating,compliant,,PASS,أطباء الجلد لا يريدونك أن تعرفي هذا السر!,السر الذي يخفونه
+test-ar-05,ar,violating,compliant,,PASS,شكلك أصغر بعشر سنوات خلال أسبوعين فقط.,شباب دائم
+test-ar-06,ar,violating,violating,missing_disclaimer,FAIL: missing_disclaimer (primary_text): Offer without terms line (add e.g. 'تطبق الشروط والأحكام.'),عرض اليوم الوطني: خصم 30% على كل المرطبات!,خصم 30%
+test-ar-07,ar,violating,violating,length,FAIL: length (primary_text): 158 characters > 125 for stories,سيروم الهيالورونيك من لومي سكن يمنح بشرتك ترطيباً عميقاً يدوم طوال اليوم، بقوام خفيف لا يترك أثراً دهنياً، ومناسب للاستخدام صباحاً ومساءً تحت المكياج أو وحده.,ترطيب يدوم
+test-ar-08,ar,violating,violating,banned_word,FAIL: banned_word (primary_text): Brand-banned word 'تبييض',منتجات تبييض آمنة لبشرة أفتح خلال أيام.,بشرة أفتح
+test-ar-09,ar,compliant,compliant,,PASS,غسول بحمض الساليسيليك 2% وشجرة الشاي، مصمم للبشرة الدهنية المعرضة لحب الشباب.,نظافة بلا جفاف
+test-ar-10,ar,compliant,compliant,,PASS,استمتعي ببشرة تبدو أكثر إشراقاً مع الاستخدام المنتظم.,إشراقة يومية
+test-ar-11,ar,compliant,compliant,,PASS,واقي شمس معدني بعامل حماية 50، لطيف على البشرة الحساسة وبدون عطور.,حماية لطيفة
+test-ar-12,ar,compliant,compliant,,PASS,روتينك المسائي بخطوتين: غسول لطيف ثم كريم ليلي بالسكوالين.,قبل النوم
+test-ar-13,ar,compliant,compliant,,PASS,إذا لم يعجبك المنتج، يمكنك إرجاعه مغلقاً خلال 14 يوماً.,تسوقي براحة
+test-ar-14,ar,compliant,compliant,,PASS,هدية مجانية مع كل طلب فوق 200 درهم. تطبق الشروط والأحكام.,هدية مع طلبك
+test-ar-15,ar,compliant,compliant,,PASS,لصقات هيدروجيل للعين بالكافيين لمظهر منتعش بعد السفر.,عيون منتعشة
+test-ar-16,ar,compliant,compliant,,PASS,قناع العسل والبروبوليس لإحساس بالنعومة والإشراق في عشر دقائق.,عشر دقائق لكِ
+test-fr-01,fr,violating,violating,personal_attribute,FAIL: personal_attribute (primary_text): Says or implies the reader has a skin or health condition,Dites adieu à vos rides grâce à notre sérum aux peptides.,Fini les rides
+test-fr-02,fr,violating,violating,medical_claim,FAIL: medical_claim (primary_text): Dit traiter ou soigner une affection; medical_claim (headline): Dit que le produit guérit,Ce baume soigne l'eczéma et apaise les rougeurs.,Le soin qui guérit
+test-fr-03,fr,violating,compliant,,PASS,Rajeunissez de 10 ans en deux semaines.,Le secret de jeunesse
+test-fr-04,fr,violating,compliant,,PASS,Les dermatologues détestent ce secret : un teint parfait sans effort.,Le secret qu'on vous cache
+test-fr-05,fr,violating,violating,missing_disclaimer,FAIL: missing_disclaimer (primary_text): Offer without terms line (add e.g. 'Voir conditions.'),Soldes d'automne : -40 % sur toute la gamme solaire !,-40 % sur le solaire
+test-fr-06,fr,violating,compliant,,PASS,Notre crème blanchissante unifie et éclaircit le teint.,Teint plus clair
+test-fr-07,fr,violating,violating,length,FAIL: length (primary_text): 110 characters > 72 for reels,Notre sérum à l'acide hyaluronique hydrate en profondeur et laisse la peau douce et repulpée toute la journée.,Hydratation longue durée
+test-fr-08,fr,violating,violating,personal_attribute,FAIL: personal_attribute (primary_text): Says or implies the reader has a skin or health condition,Avez-vous des taches brunes ? Effacez-les en une nuit avec notre sérum.,Taches : effacées
+test-fr-09,fr,compliant,compliant,,PASS,Notre nettoyant à l'acide salicylique 2 % est formulé pour les peaux grasses à tendance acnéique.,"Propre, sans tiraillement"
+test-fr-10,fr,compliant,compliant,,PASS,Satisfaite ou remboursée : retour des produits non ouverts sous 14 jours.,Achetez l'esprit tranquille
+test-fr-11,fr,compliant,compliant,,PASS,Aide à atténuer l'apparence des taches avec une utilisation quotidienne.,Un teint plus uniforme
+test-fr-12,fr,compliant,compliant,,PASS,"Un écran solaire SPF 50 au fini invisible, parfait sous le maquillage.",Protection quotidienne
+test-fr-13,fr,compliant,compliant,,PASS,"Votre routine du soir en deux gestes : nettoyer, puis appliquer la crème de nuit.",Avant de dormir
+test-fr-14,fr,compliant,compliant,,PASS,Un coffret cadeau offert dès 250 AED d'achat. Voir conditions.,Votre cadeau vous attend
+test-fr-15,fr,compliant,compliant,,PASS,Des patchs yeux à la caféine pour un regard reposé après un long vol.,Regard frais
+test-fr-16,fr,compliant,compliant,,PASS,Masque au miel et à la propolis : dix minutes de douceur pour votre peau.,Dix minutes pour vous

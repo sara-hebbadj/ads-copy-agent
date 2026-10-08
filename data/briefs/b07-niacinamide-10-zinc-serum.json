@@ -1,0 +1,24 @@
+{
+  "id": "b07-niacinamide-10-zinc-serum",
+  "product_id": "P009",
+  "product": "Niacinamide 10% + Zinc Serum",
+  "category": "serum",
+  "skin_type": "oily",
+  "key_ingredients": [
+    "niacinamide 10%",
+    "zinc 1%"
+  ],
+  "price_aed": 79,
+  "audience": "Adults aged 18-35 in the UAE who want light textures in hot, humid weather",
+  "key_message": "A few drops of niacinamide 10% for a routine step that feels light and easy.",
+  "offer": null,
+  "tone": "fresh and upbeat",
+  "placement": "reels",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {}
+}

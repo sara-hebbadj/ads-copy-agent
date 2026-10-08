@@ -1,0 +1,181 @@
+date,ad_set_id,ad_set_name,product,language,placement,audience,spend_aed,impressions,clicks,purchases,revenue_aed
+2026-09-08,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",301.54,11561,199,4,717.04
+2026-09-08,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",242.39,8668,99,6,1105.74
+2026-09-08,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",351.19,23754,164,3,292.78
+2026-09-08,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),112.44,3325,83,4,624.41
+2026-09-08,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",198.74,13181,112,4,316.09
+2026-09-08,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",18.84,1578,22,1,117.21
+2026-09-09,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",301.76,12109,215,4,705.41
+2026-09-09,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",247.45,8644,134,2,380.98
+2026-09-09,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",337.73,21782,137,1,97.03
+2026-09-09,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),119.14,3289,86,4,617.2
+2026-09-09,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",199.89,12989,112,1,80.02
+2026-09-09,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",19.38,1602,17,0,0.0
+2026-09-10,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",287.94,10685,154,9,1652.11
+2026-09-10,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",242.53,7041,98,2,331.87
+2026-09-10,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",349.7,25447,137,1,98.13
+2026-09-10,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),116.92,3571,88,5,735.26
+2026-09-10,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",184.5,10251,94,0,0.0
+2026-09-10,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",19.47,2048,32,1,102.03
+2026-09-11,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",284.81,11119,191,2,414.86
+2026-09-11,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",233.86,7175,92,2,426.85
+2026-09-11,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",351.59,27167,130,0,0.0
+2026-09-11,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),117.72,3987,89,3,459.55
+2026-09-11,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",187.62,11307,98,4,321.45
+2026-09-11,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",19.1,1619,21,0,0.0
+2026-09-12,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",279.12,13150,201,5,1071.79
+2026-09-12,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",254.05,9476,127,10,1798.66
+2026-09-12,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",329.69,22928,139,4,390.39
+2026-09-12,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),123.01,3471,84,4,718.09
+2026-09-12,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",194.28,11582,103,4,254.7
+2026-09-12,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",20.31,2019,23,0,0.0
+2026-09-13,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",290.05,11994,215,6,1163.31
+2026-09-13,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",234.02,8957,133,9,1614.88
+2026-09-13,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",348.21,25183,152,3,277.84
+2026-09-13,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),113.69,3684,100,4,654.46
+2026-09-13,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",204.35,11107,118,4,293.3
+2026-09-13,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",19.53,1830,21,0,0.0
+2026-09-14,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",297.11,12676,203,6,1129.02
+2026-09-14,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",238.16,8808,99,3,627.76
+2026-09-14,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",352.97,24620,130,2,184.36
+2026-09-14,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),121.76,3498,76,5,737.64
+2026-09-14,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",197.06,12960,113,1,78.51
+2026-09-14,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",19.64,1718,20,0,0.0
+2026-09-15,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",301.21,12972,221,12,2362.24
+2026-09-15,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",238.65,7858,98,3,572.01
+2026-09-15,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",358.04,25991,164,6,603.8
+2026-09-15,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),118.17,3254,72,5,735.6
+2026-09-15,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",201.19,11230,95,1,76.56
+2026-09-15,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",18.6,1578,11,0,0.0
+2026-09-16,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",280.72,11882,183,7,1140.21
+2026-09-16,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",231.57,8196,112,2,404.84
+2026-09-16,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",346.26,23129,128,0,0.0
+2026-09-16,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),113.97,3472,101,2,306.42
+2026-09-16,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",203.45,10983,102,1,62.97
+2026-09-16,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",19.41,1673,21,0,0.0
+2026-09-17,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",280.79,13003,217,9,1870.79
+2026-09-17,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",238.38,7426,109,3,453.74
+2026-09-17,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",338.11,28199,164,2,180.15
+2026-09-17,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),119.01,3573,93,4,742.25
+2026-09-17,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",203.5,13323,126,5,394.08
+2026-09-17,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",19.02,1643,16,0,0.0
+2026-09-18,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",300.51,12189,219,8,1411.4
+2026-09-18,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",240.67,8086,109,4,809.56
+2026-09-18,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",343.4,22847,145,0,0.0
+2026-09-18,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),120.37,3510,96,3,442.51
+2026-09-18,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",190.43,11399,100,4,296.13
+2026-09-18,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",18.53,1424,17,0,0.0
+2026-09-19,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",303.87,13237,223,8,1442.59
+2026-09-19,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",235.27,7742,107,0,0.0
+2026-09-19,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",332.7,22114,121,1,83.07
+2026-09-19,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),119.03,3868,101,2,297.34
+2026-09-19,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",205.68,13106,142,5,389.79
+2026-09-19,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",18.48,1345,10,0,0.0
+2026-09-20,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",298.29,11090,187,7,1294.85
+2026-09-20,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",248.47,7620,120,7,1193.36
+2026-09-20,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",335.16,21242,129,0,0.0
+2026-09-20,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),117.99,2935,68,3,489.36
+2026-09-20,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",188.44,12082,111,2,127.32
+2026-09-20,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",20.05,1554,16,1,111.62
+2026-09-21,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",286.74,12417,217,8,1594.59
+2026-09-21,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",251.56,8951,122,6,1123.63
+2026-09-21,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",341.74,23934,124,0,0.0
+2026-09-21,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),110.94,2632,59,3,476.09
+2026-09-21,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",192.46,13081,113,2,154.79
+2026-09-21,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",18.4,1622,24,0,0.0
+2026-09-22,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",292.77,11068,196,9,1647.88
+2026-09-22,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",231.34,7050,97,7,1296.81
+2026-09-22,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",344.72,21218,110,2,192.06
+2026-09-22,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),121.69,3480,81,3,535.96
+2026-09-22,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",193.11,12805,117,2,144.68
+2026-09-22,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",20.0,1906,26,0,0.0
+2026-09-23,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",305.37,14175,249,10,1957.57
+2026-09-23,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",244.75,7481,112,5,924.69
+2026-09-23,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",330.9,25657,149,2,200.32
+2026-09-23,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),119.98,3743,90,1,146.13
+2026-09-23,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",195.45,11732,92,2,155.82
+2026-09-23,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",20.52,1645,16,1,157.16
+2026-09-24,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",283.0,9954,177,8,1400.4
+2026-09-24,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",235.62,9097,108,4,799.85
+2026-09-24,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",345.44,26412,160,4,390.38
+2026-09-24,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),112.13,3291,94,2,320.61
+2026-09-24,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",190.12,12699,110,2,152.61
+2026-09-24,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",19.46,1718,22,0,0.0
+2026-09-25,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",279.65,11640,198,10,1748.77
+2026-09-25,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",246.96,7872,111,2,380.36
+2026-09-25,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",350.3,25998,160,3,296.67
+2026-09-25,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),111.99,3142,65,5,813.59
+2026-09-25,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",202.73,14213,141,2,136.67
+2026-09-25,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",20.35,1620,19,0,0.0
+2026-09-26,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",293.48,12639,241,5,1068.57
+2026-09-26,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",235.71,7802,108,7,1292.68
+2026-09-26,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",353.5,18858,126,3,277.82
+2026-09-26,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),120.89,4132,75,3,443.76
+2026-09-26,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",190.18,11201,112,1,73.81
+2026-09-26,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",19.26,1686,18,1,174.86
+2026-09-27,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",297.78,11077,194,6,1165.6
+2026-09-27,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",250.61,8767,127,4,864.28
+2026-09-27,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",343.63,26097,155,1,94.16
+2026-09-27,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),114.92,3176,71,1,176.08
+2026-09-27,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",198.42,13174,112,1,69.37
+2026-09-27,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",20.29,1555,20,0,0.0
+2026-09-28,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",285.08,11562,202,11,2042.7
+2026-09-28,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",230.64,7370,119,4,781.69
+2026-09-28,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",340.86,24546,154,4,362.65
+2026-09-28,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),120.49,3473,51,1,163.6
+2026-09-28,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",190.37,12010,93,1,69.86
+2026-09-28,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",20.29,1606,10,0,0.0
+2026-09-29,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",302.32,14140,239,5,916.11
+2026-09-29,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",247.04,7857,100,3,507.93
+2026-09-29,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",354.05,26646,162,2,203.9
+2026-09-29,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),123.49,3892,60,7,1208.98
+2026-09-29,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",202.31,11865,114,4,282.42
+2026-09-29,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",20.33,1855,17,0,0.0
+2026-09-30,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",278.23,12018,207,9,1625.47
+2026-09-30,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",232.55,7650,115,3,587.68
+2026-09-30,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",328.79,25479,162,6,598.41
+2026-09-30,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),121.92,3109,49,1,123.82
+2026-09-30,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",196.46,11461,103,3,190.99
+2026-09-30,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",20.07,1471,18,0,0.0
+2026-10-01,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",284.93,12275,223,9,1775.73
+2026-10-01,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",255.73,9051,122,3,541.13
+2026-10-01,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",329.97,22670,139,3,252.71
+2026-10-01,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),115.12,3368,50,4,482.71
+2026-10-01,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",197.63,11225,111,8,591.32
+2026-10-01,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",19.5,1636,18,0,0.0
+2026-10-02,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",280.23,12221,231,11,2084.23
+2026-10-02,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",242.7,8287,128,4,801.56
+2026-10-02,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",336.98,25652,157,1,83.09
+2026-10-02,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),122.64,3691,55,6,970.04
+2026-10-02,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",196.38,12061,116,0,0.0
+2026-10-02,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",20.13,1508,23,0,0.0
+2026-10-03,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",294.65,12444,216,7,1238.71
+2026-10-03,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",240.3,6533,101,4,600.63
+2026-10-03,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",338.08,21973,135,3,266.3
+2026-10-03,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),119.51,3213,44,2,288.9
+2026-10-03,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",187.07,12407,121,6,521.76
+2026-10-03,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",19.8,1547,18,0,0.0
+2026-10-04,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",293.64,11265,263,11,2125.98
+2026-10-04,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",240.92,7791,93,3,523.65
+2026-10-04,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",325.63,25696,178,5,494.45
+2026-10-04,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),123.23,3883,41,2,280.21
+2026-10-04,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",185.97,10655,102,5,390.62
+2026-10-04,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",18.88,1550,25,2,319.32
+2026-10-05,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",281.07,11259,204,11,2272.42
+2026-10-05,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",256.01,8552,123,3,573.62
+2026-10-05,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",338.74,26045,151,4,334.46
+2026-10-05,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),117.11,3230,33,0,0.0
+2026-10-05,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",197.05,13817,112,7,528.38
+2026-10-05,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",19.34,1597,24,1,190.17
+2026-10-06,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",297.86,13404,248,9,1508.46
+2026-10-06,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",237.5,9361,164,4,780.45
+2026-10-06,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",349.26,23383,143,0,0.0
+2026-10-06,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),114.01,3100,31,2,285.02
+2026-10-06,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",201.21,11470,113,4,309.21
+2026-10-06,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",19.26,1356,19,0,0.0
+2026-10-07,vitc-ar-stories,Vitamin C Serum | Arabic | Stories,Vitamin C Brightening Serum,ar,stories,"Women 25-44, UAE",285.0,11939,237,7,1204.81
+2026-10-07,vitc-en-igfeed,Vitamin C Serum | English | IG Feed,Vitamin C Brightening Serum,en,instagram_feed,"Women 25-44, UAE",246.87,8076,93,3,524.29
+2026-10-07,spf-en-fbfeed-broad,Sun Stick SPF 50+ | English | FB Feed,Sun Stick SPF 50+,en,facebook_feed,"Broad 18-65, UAE",341.03,25466,161,3,310.63
+2026-10-07,nightcream-fr-retarget,Squalane Night Cream | French | Retargeting,Squalane Night Cream,fr,instagram_feed,Site visitors (30 days),121.59,3224,36,1,192.73
+2026-10-07,cleanser-ar-fbfeed-lal,Gentle Foam Cleanser | Arabic | FB Feed,Gentle Foam Cleanser,ar,facebook_feed,"Lookalike 1% of buyers, UAE",204.65,11092,83,1,57.37
+2026-10-07,eyepatch-en-reels-test,Hydrogel Eye Patches | English | Reels,Hydrogel Eye Patches (30 pairs),en,reels,"Interest test: travel, UAE",18.53,1473,16,1,135.86

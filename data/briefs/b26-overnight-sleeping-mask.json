@@ -1,0 +1,24 @@
+{
+  "id": "b26-overnight-sleeping-mask",
+  "product_id": "P034",
+  "product": "Overnight Sleeping Mask",
+  "category": "mask",
+  "skin_type": "dry",
+  "key_ingredients": [
+    "hyaluronic acid",
+    "squalane"
+  ],
+  "price_aed": 95,
+  "audience": "Adults aged 25-50 in the UAE who spend long days in air-conditioned offices",
+  "key_message": "A short self-care moment with hyaluronic acid.",
+  "offer": "15% off with code LUMI15 until 31 October 2026",
+  "tone": "expert but simple",
+  "placement": "facebook_feed",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {}
+}

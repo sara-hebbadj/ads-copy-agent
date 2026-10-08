@@ -1,0 +1,24 @@
+{
+  "id": "b14-oil-free-water-gel",
+  "product_id": "P018",
+  "product": "Oil-Free Water Gel",
+  "category": "moisturiser",
+  "skin_type": "oily",
+  "key_ingredients": [
+    "hyaluronic acid",
+    "aloe vera"
+  ],
+  "price_aed": 89,
+  "audience": "Adults aged 18-35 in the UAE who want light textures in hot, humid weather",
+  "key_message": "Comfortable hydration with hyaluronic acid that suits the UAE climate.",
+  "offer": null,
+  "tone": "expert but simple",
+  "placement": "facebook_feed",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {}
+}

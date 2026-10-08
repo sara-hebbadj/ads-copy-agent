@@ -1,0 +1,133 @@
+{
+  "task": "policy_llm",
+  "date": "2026-10-08",
+  "model": "fake/offline-canned",
+  "split": "test",
+  "rules_only": {
+    "n": 48,
+    "tp": 16,
+    "fp": 1,
+    "fn": 8,
+    "tn": 23,
+    "precision": 0.941,
+    "recall": 0.667,
+    "accuracy": 0.812,
+    "by_language": {
+      "en": {
+        "n": 16,
+        "tp": 5,
+        "fp": 1,
+        "fn": 3,
+        "tn": 7,
+        "precision": 0.833,
+        "recall": 0.625,
+        "accuracy": 0.75
+      },
+      "ar": {
+        "n": 16,
+        "tp": 6,
+        "fp": 0,
+        "fn": 2,
+        "tn": 8,
+        "precision": 1.0,
+        "recall": 0.75,
+        "accuracy": 0.875
+      },
+      "fr": {
+        "n": 16,
+        "tp": 5,
+        "fp": 0,
+        "fn": 3,
+        "tn": 8,
+        "precision": 1.0,
+        "recall": 0.625,
+        "accuracy": 0.812
+      }
+    }
+  },
+  "llm_only": {
+    "n": 48,
+    "tp": 0,
+    "fp": 0,
+    "fn": 24,
+    "tn": 24,
+    "precision": null,
+    "recall": 0.0,
+    "accuracy": 0.5,
+    "by_language": {
+      "en": {
+        "n": 16,
+        "tp": 0,
+        "fp": 0,
+        "fn": 8,
+        "tn": 8,
+        "precision": null,
+        "recall": 0.0,
+        "accuracy": 0.5
+      },
+      "ar": {
+        "n": 16,
+        "tp": 0,
+        "fp": 0,
+        "fn": 8,
+        "tn": 8,
+        "precision": null,
+        "recall": 0.0,
+        "accuracy": 0.5
+      },
+      "fr": {
+        "n": 16,
+        "tp": 0,
+        "fp": 0,
+        "fn": 8,
+        "tn": 8,
+        "precision": null,
+        "recall": 0.0,
+        "accuracy": 0.5
+      }
+    }
+  },
+  "rules_or_llm": {
+    "n": 48,
+    "tp": 16,
+    "fp": 1,
+    "fn": 8,
+    "tn": 23,
+    "precision": 0.941,
+    "recall": 0.667,
+    "accuracy": 0.812,
+    "by_language": {
+      "en": {
+        "n": 16,
+        "tp": 5,
+        "fp": 1,
+        "fn": 3,
+        "tn": 7,
+        "precision": 0.833,
+        "recall": 0.625,
+        "accuracy": 0.75
+      },
+      "ar": {
+        "n": 16,
+        "tp": 6,
+        "fp": 0,
+        "fn": 2,
+        "tn": 8,
+        "precision": 1.0,
+        "recall": 0.75,
+        "accuracy": 0.875
+      },
+      "fr": {
+        "n": 16,
+        "tp": 5,
+        "fp": 0,
+        "fn": 3,
+        "tn": 8,
+        "precision": 1.0,
+        "recall": 0.625,
+        "accuracy": 0.812
+      }
+    }
+  },
+  "cost_usd": 0.0
+}

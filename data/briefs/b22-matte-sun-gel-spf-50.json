@@ -1,0 +1,43 @@
+{
+  "id": "b22-matte-sun-gel-spf-50",
+  "product_id": "P029",
+  "product": "Matte Sun Gel SPF 50",
+  "category": "sunscreen",
+  "skin_type": "oily",
+  "key_ingredients": [
+    "UV filters",
+    "silica"
+  ],
+  "price_aed": 85,
+  "audience": "Adults aged 18-35 in the UAE who want light textures in hot, humid weather",
+  "key_message": "Daily sun protection that is light enough to wear every day.",
+  "offer": null,
+  "tone": "fresh and upbeat",
+  "placement": "facebook_feed",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {
+    "en": [
+      "sunblock",
+      "waterproof",
+      "all-day protection"
+    ],
+    "ar": [
+      "مقاوم للماء تماماً",
+      "حماية طوال اليوم"
+    ],
+    "fr": [
+      "écran total",
+      "waterproof",
+      "protection toute la journée"
+    ]
+  },
+  "required_disclaimers": {
+    "en": "Reapply every 2 hours.",
+    "ar": "أعيدي وضعه كل ساعتين.",
+    "fr": "Renouvelez toutes les 2 heures."
+  }
+}

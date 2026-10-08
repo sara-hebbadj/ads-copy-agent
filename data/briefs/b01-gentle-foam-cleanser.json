@@ -1,0 +1,24 @@
+{
+  "id": "b01-gentle-foam-cleanser",
+  "product_id": "P001",
+  "product": "Gentle Foam Cleanser",
+  "category": "cleanser",
+  "skin_type": "all",
+  "key_ingredients": [
+    "glycerin",
+    "green tea"
+  ],
+  "price_aed": 59,
+  "audience": "Women and men aged 22-45 in the UAE who want a simple daily routine",
+  "key_message": "A gentle daily cleanse that leaves skin clean and comfortable, not tight.",
+  "offer": "15% off with code LUMI15 until 31 October 2026",
+  "tone": "fresh and upbeat",
+  "placement": "stories",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {}
+}

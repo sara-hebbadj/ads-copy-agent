@@ -1,0 +1,24 @@
+{
+  "id": "b30-aloe-sheet-mask-5-pack",
+  "product_id": "P038",
+  "product": "Aloe Sheet Mask (5 pack)",
+  "category": "mask",
+  "skin_type": "sensitive",
+  "key_ingredients": [
+    "aloe vera",
+    "allantoin"
+  ],
+  "price_aed": 45,
+  "audience": "Adults aged 22-50 in the UAE who prefer gentle, fragrance-light products",
+  "key_message": "A short self-care moment with aloe vera.",
+  "offer": null,
+  "tone": "warm and calm",
+  "placement": "facebook_feed",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {}
+}

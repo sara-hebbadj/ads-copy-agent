@@ -1,0 +1,24 @@
+{
+  "id": "b25-kaolin-clay-purifying-mask",
+  "product_id": "P033",
+  "product": "Kaolin Clay Purifying Mask",
+  "category": "mask",
+  "skin_type": "oily",
+  "key_ingredients": [
+    "kaolin clay",
+    "niacinamide"
+  ],
+  "price_aed": 79,
+  "audience": "Adults aged 18-35 in the UAE who want light textures in hot, humid weather",
+  "key_message": "A short self-care moment with kaolin clay.",
+  "offer": null,
+  "tone": "fresh and upbeat",
+  "placement": "stories",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {}
+}

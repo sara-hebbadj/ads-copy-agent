@@ -1,0 +1,24 @@
+{
+  "id": "b18-panthenol-soothing-cream",
+  "product_id": "P022",
+  "product": "Panthenol Soothing Cream",
+  "category": "moisturiser",
+  "skin_type": "sensitive",
+  "key_ingredients": [
+    "panthenol 5%",
+    "madecassoside"
+  ],
+  "price_aed": 85,
+  "audience": "Adults aged 22-50 in the UAE who prefer gentle, fragrance-light products",
+  "key_message": "Comfortable hydration with panthenol 5% that suits the UAE climate.",
+  "offer": "Free Honey Glow Mask sample with orders over AED 200",
+  "tone": "warm and calm",
+  "placement": "facebook_feed",
+  "languages": [
+    "en",
+    "ar",
+    "fr"
+  ],
+  "banned_words": {},
+  "required_disclaimers": {}
+}
